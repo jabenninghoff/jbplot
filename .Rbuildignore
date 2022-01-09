@@ -1,9 +1,9 @@
-^renv$
-^renv\.lock$
 ^\.github$
 ^\.lintr$
 ^\.Rproj\.user$
 ^jbplot\.Rproj$
 ^LICENSE\.md$
 ^README\.Rmd$
+^renv\.lock$
+^renv$
 ^TODO\.md$
