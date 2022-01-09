@@ -1,8 +1,11 @@
+^_pkgdown\.yml$
 ^\.github$
 ^\.lintr$
 ^\.Rproj\.user$
+^docs$
 ^jbplot\.Rproj$
 ^LICENSE\.md$
+^pkgdown$
 ^README\.Rmd$
 ^renv\.lock$
 ^renv$
