@@ -1,3 +1,9 @@
+library/
+local/
+cellar/
+lock/
+python/
+staging/
 # History files
 .Rhistory
 .Rapp.history
@@ -37,3 +43,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+# macOS, vim
+.DS_Store
+*.swp
+~$*

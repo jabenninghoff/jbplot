@@ -1,2 +1,9 @@
-^jbplot\.Rproj$
+^renv$
+^renv\.lock$
+^\.github$
+^\.lintr$
 ^\.Rproj\.user$
+^jbplot\.Rproj$
+^LICENSE\.md$
+^README\.Rmd$
+^TODO\.md$
