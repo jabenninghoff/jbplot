@@ -1,10 +1,10 @@
 Package: jbplot
-Title: What the Package Does (One Line, Title Case)
+Title: A Personal Collection of ggplot2 Themes
 Version: 0.0.0.9000
 Authors@R: 
     person("John", "Benninghoff", , "jbenninghoff@mac.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6230-4742"))
-Description: What the package does (one paragraph).
+Description: My personal collection of ggplot2 themes and stylings.
 License: MIT + file LICENSE
 URL: https://jabenninghoff.github.io/jbplot,
     https://github.com/jabenninghoff/jbplot

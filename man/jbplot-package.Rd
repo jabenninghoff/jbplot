@@ -4,9 +4,9 @@
 \name{jbplot-package}
 \alias{jbplot}
 \alias{jbplot-package}
-\title{jbplot: What the Package Does (One Line, Title Case)}
+\title{jbplot: A Personal Collection of ggplot2 Themes}
 \description{
-What the package does (one paragraph).
+My personal collection of ggplot2 themes and stylings.
 }
 \seealso{
 Useful links:
