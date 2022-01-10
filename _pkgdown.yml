@@ -1,4 +1,12 @@
-url: ~
-template:
-  bootstrap: 5
+url: https://jabenninghoff.github.io/jbplot
 
+reference:
+
+- title: "jbplot-package"
+  contents:
+  - jbplot-package
+
+- title: "ggplot2 Style"
+  contents:
+  - theme_quo
+  - viridis_quo
