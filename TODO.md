@@ -1,3 +1,3 @@
 # TODO
 
-- [ ] Migrate ggplot2 themes from rdev
+- [x] Migrate ggplot2 themes from rdev
