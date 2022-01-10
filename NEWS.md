@@ -1,3 +1,5 @@
-# jbplot 0.0.0.9000
+# jbplot 1.0.0
 
-* Added a `NEWS.md` file to track changes to the package.
+* Migrated `theme_quo()` from `rdev::theme_quo()`: [ggplot2](https://ggplot2.tidyverse.org) theme based on `ggplot2::theme_bw()` and font [Lato](https://www.latofonts.com)
+
+* Migrated `viridis_quo()` from `rdev::viridis_quo()`: Sets the default theme to `theme_quo()` and the default color scales to `viridis`
