@@ -40,4 +40,28 @@ renv::install("jabenninghoff/jbplot")
 
 ## Examples
 
-See the “jbplot ggplot2 style” vignette.
+jbplot allows creation of styled plots, such as this `mtcars` example,
+adapted from `ggplot2::theme_minimal()`:
+
+``` r
+library(ggplot2)
+library(jbplot)
+
+ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point() +
+  labs(
+    title = "Fuel economy declines as weight increases",
+    subtitle = "(1973-74)",
+    caption = "Data from the 1974 Motor Trend US magazine.",
+    x = "Weight (1000 lbs)",
+    y = "Fuel economy (mpg)",
+    color = "Gears"
+  ) +
+  theme_quo() +
+  scale_color_viridis_d()
+```
+
+<img src="man/figures/README-mtcars-1.png" width="100%" />
+
+For more information, see the “jbplot ggplot2 style”
+[vignette](https://jabenninghoff.github.io/jbplot/articles/jbplot-style.html).
