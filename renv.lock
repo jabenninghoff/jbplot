@@ -362,10 +362,10 @@
     },
     "fansi": {
       "Package": "fansi",
-      "Version": "0.5.0",
+      "Version": "1.0.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "d447b40982c576a72b779f0a3b3da227",
+      "Hash": "ae34c3d1fdfac1566ca17c1b5d8f2613",
       "Requirements": []
     },
     "farver": {
@@ -921,21 +921,20 @@
     },
     "rdev": {
       "Package": "rdev",
-      "Version": "0.6.2.9000",
+      "Version": "0.7.2",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteUsername": "jabenninghoff",
       "RemoteRepo": "rdev",
       "RemoteRef": "main",
-      "RemoteSha": "7ab6630eaca0dcbf3c0dcd08110b0a1b69945a55",
+      "RemoteSha": "b1f74085c7ce30540c1f6e332732ee8489caf7ae",
       "RemoteHost": "api.github.com",
       "Remotes": "jimhester/lintr",
-      "Hash": "54fced0a0404e2af995d7adf2d2f8c72",
+      "Hash": "5e975381bc586cf0ad85609e6ea31b45",
       "Requirements": [
         "desc",
         "devtools",
         "fs",
-        "ggplot2",
         "gh",
         "lintr",
         "markdown",
@@ -948,6 +947,7 @@
         "rlang",
         "rmarkdown",
         "styler",
+        "tibble",
         "usethis",
         "yaml"
       ]
