@@ -1,3 +1,7 @@
+# jbplot 1.0.2
+
+* Important update from renv 0.15.0 to [0.15.1](https://rstudio.github.io/renv/news/index.html#renv-0151)
+
 # jbplot 1.0.1
 
 * Minor updates, added `theme_quo()` example to README
