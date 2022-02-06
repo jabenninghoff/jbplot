@@ -21,11 +21,20 @@ setting the appropriate panel.grid element to \code{\link[ggplot2:element]{ggplo
 }
 \description{
 An opinionated \link[ggplot2:ggplot2-package]{ggplot2} theme based on \code{\link[ggplot2:ggtheme]{ggplot2::theme_minimal()}}.
-Quo can be added to individual plots or set as the default theme using \code{\link[=viridis_quo]{viridis_quo()}}.
+\href{https://www.youtube.com/watch?v=HhZaHf8RP6g}{Viridis Quo}!
 }
 \details{
 Quo requires \href{https://www.latofonts.com}{Lato}, which can be installed on macOS using
 \verb{brew install font-lato}.
+
+Quo is designed to be paired with the viridis color scale, added by calling one of the continuous
+(c) or discrete (d) viridis color scales:
+\itemize{
+\item \code{\link[ggplot2:scale_viridis]{ggplot2::scale_color_viridis_c()}}
+\item \code{\link[ggplot2:scale_viridis]{ggplot2::scale_fill_viridis_c()}}
+\item \code{\link[ggplot2:scale_viridis]{ggplot2::scale_color_viridis_d()}}
+\item \code{\link[ggplot2:scale_viridis]{ggplot2::scale_fill_viridis_d()}}
+}
 }
 \examples{
 # adapted from ggplot2::theme_minimal()

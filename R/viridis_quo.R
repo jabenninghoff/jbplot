@@ -1,10 +1,18 @@
 #' Quo Theme
 #'
 #' An opinionated [ggplot2][ggplot2::ggplot2-package] theme based on [ggplot2::theme_minimal()].
-#'   Quo can be added to individual plots or set as the default theme using [viridis_quo()].
+#'   [Viridis Quo](https://www.youtube.com/watch?v=HhZaHf8RP6g)!
 #'
 #' Quo requires [Lato](https://www.latofonts.com), which can be installed on macOS using
 #'   `brew install font-lato`.
+#'
+#' Quo is designed to be paired with the viridis color scale, added by calling one of the continuous
+#'   (c) or discrete (d) viridis color scales:
+#'
+#' - [ggplot2::scale_color_viridis_c()]
+#' - [ggplot2::scale_fill_viridis_c()]
+#' - [ggplot2::scale_color_viridis_d()]
+#' - [ggplot2::scale_fill_viridis_d()]
 #'
 #' @param major,major.x,major.y,minor,minor.x,minor.y,x,y set to FALSE to disable grid lines by
 #'   setting the appropriate panel.grid element to [ggplot2::element_blank()].
@@ -66,21 +74,4 @@ theme_quo <- function(major = TRUE,
   }
 
   gg
-}
-
-#' Viridis Quo
-#'
-#' Sets the default theme to [theme_quo()] and the default color scales to
-#'   [`viridis`][ggplot2::scale_colour_viridis_d()].
-#'
-#' To reset the default theme and color scales, restart the R session.
-#'
-#' @export
-viridis_quo <- function() {
-  ggplot2::theme_set(theme_quo())
-
-  options(ggplot2.continuous.colour = "viridis")
-  options(ggplot2.continuous.fill = "viridis")
-  options(ggplot2.discrete.colour = ggplot2::scale_colour_viridis_d)
-  options(ggplot2.discrete.fill = ggplot2::scale_fill_viridis_d)
 }
