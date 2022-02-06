@@ -80,9 +80,9 @@ p
 v
 ```
 
-## Gridlines
+## Grid lines
 
-Gridlines can be selectively disabled using `theme_quo()`:
+Grid lines can be selectively disabled using `theme_quo()`:
 
 ```{r panel.grid, fig.showtext = TRUE}
 d
