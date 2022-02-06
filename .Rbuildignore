@@ -10,3 +10,4 @@
 ^renv\.lock$
 ^renv$
 ^TODO\.md$
+^codecov\.yml$

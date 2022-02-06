@@ -7,12 +7,14 @@
 
 [![R-CMD-check](https://github.com/jabenninghoff/jbplot/workflows/R-CMD-check/badge.svg)](https://github.com/jabenninghoff/jbplot/actions)
 [![lint](https://github.com/jabenninghoff/jbplot/workflows/lint/badge.svg)](https://github.com/jabenninghoff/jbplot/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/jabenninghoff/jbplot/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jabenninghoff/jbplot?branch=main)
 <!-- badges: end -->
 
 ## Overview
 
 **A Personal Collection of ggplot2 Themes:** My personal collection of
-ggplot2 themes and stylings.
+ggplot2 themes and styles.
 
 Feel free to use and/or fork this project!
 
