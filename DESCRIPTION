@@ -21,7 +21,9 @@ Suggests:
     rdev (>= 0.8.9),
     rmarkdown,
     testthat (>= 3.0.0),
-    spelling
+    spelling,
+    covr,
+    DT
 Remotes: 
     jabenninghoff/rdev
 Config/testthat/edition: 3
