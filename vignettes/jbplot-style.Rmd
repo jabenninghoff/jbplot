@@ -22,11 +22,13 @@ library(showtext)
 font_add_google("Lato", "Lato")
 ```
 
-`jbplot` includes functions to change the style of [ggplot2](https://ggplot2.tidyverse.org) plots. The included theme, quo, can be added to individual plots using `theme_quo()`. `viridis_quo()` sets the default theme to `theme_quo()` and the default color palettes to `viridis`, and can be invoked automatically in `.Rprofile`.
+`jbplot` includes functions to change the style of [ggplot2](https://ggplot2.tidyverse.org) plots.
+The included theme, quo, can be added to individual plots using `theme_quo()`.
 
 ## Quo Theme
 
-The quo theme applied to the venerable `mtcars` dataset. Example adapted from `ggplot2::theme_minimal()`:
+The quo theme applied to the venerable `mtcars` dataset. Example adapted from
+`ggplot2::theme_minimal()`:
 
 ```{r p1, fig.showtext = TRUE}
 p1 <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
@@ -55,9 +57,15 @@ p1 +
 
 ## Viridis Quo
 
-Invoking `viridis_quo()` will change the style of all plots. Examples adapted from `ggplot2::scale_colour_viridis_d`:
+Quo is designed to be paired with the viridis color scale, added by calling one of the continuous
+(c) or discrete (d) viridis color scales:
 
-Sample plots using the default theme and color scales.
+- [`ggplot2::scale_color_viridis_c()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
+- [`ggplot2::scale_fill_viridis_c()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
+- [`ggplot2::scale_color_viridis_d()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
+- [`ggplot2::scale_fill_viridis_d()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
+
+Sample plots using the default theme and color scales:
 
 ```{r txsamp}
 txsamp <- subset(txhousing, city %in% c("Houston", "Fort Worth", "San Antonio", "Dallas", "Austin"))
@@ -70,14 +78,13 @@ txsamp <- subset(txhousing, city %in% c("Houston", "Fort Worth", "San Antonio", 
   geom_tile(aes(waiting, eruptions, fill = density)))
 ```
 
-The same plots after running `viridis_quo()`:
+The same plots after applying viridis and quo:
 
 ```{r viridis_quo, fig.showtext = TRUE}
-viridis_quo()
 
-d
-p
-v
+d + scale_color_viridis_d() + theme_quo()
+p + scale_fill_viridis_d() + theme_quo()
+v + scale_fill_viridis_c() + theme_quo()
 ```
 
 ## Grid lines
@@ -85,7 +92,7 @@ v
 Grid lines can be selectively disabled using `theme_quo()`:
 
 ```{r panel.grid, fig.showtext = TRUE}
-d
-p + theme_quo(major.x = FALSE, minor.x = FALSE)
-v + theme_quo(major = FALSE, minor = FALSE)
+d + scale_color_viridis_d() + theme_quo()
+p + scale_fill_viridis_d() + theme_quo(major.x = FALSE, minor.x = FALSE)
+v + scale_fill_viridis_c() + theme_quo(major = FALSE, minor = FALSE)
 ```
