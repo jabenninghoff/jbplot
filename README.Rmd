@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-**`r packageDescription("jbplot", fields = "Title")`:** `r packageDescription("jbplot", fields = "Description")`
+**`r desc::desc_get_field("Title")`:** `r desc::desc_get_field("Description")`
 
 Feel free to use and/or fork this project!
 
