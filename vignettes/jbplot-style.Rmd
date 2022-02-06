@@ -60,10 +60,10 @@ p1 +
 Quo is designed to be paired with the viridis color scale, added by calling one of the continuous
 (c) or discrete (d) viridis color scales:
 
-- [`ggplot2::scale_color_viridis_c()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
-- [`ggplot2::scale_fill_viridis_c()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
-- [`ggplot2::scale_color_viridis_d()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
-- [`ggplot2::scale_fill_viridis_d()`](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
+- `ggplot2::scale_color_viridis_c()`
+- `ggplot2::scale_fill_viridis_c()`
+- `ggplot2::scale_color_viridis_d()`
+- `ggplot2::scale_fill_viridis_d()`
 
 Sample plots using the default theme and color scales:
 
@@ -92,7 +92,7 @@ v + scale_fill_viridis_c() + theme_quo()
 Grid lines can be selectively disabled using `theme_quo()`:
 
 ```{r panel.grid, fig.showtext = TRUE}
-d + scale_color_viridis_d() + theme_quo()
-p + scale_fill_viridis_d() + theme_quo(major.x = FALSE, minor.x = FALSE)
+d + scale_color_viridis_d() + theme_quo(minor = FALSE)
+p + scale_fill_viridis_d() + theme_quo(x = FALSE)
 v + scale_fill_viridis_c() + theme_quo(major = FALSE, minor = FALSE)
 ```
