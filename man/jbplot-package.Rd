@@ -6,7 +6,7 @@
 \alias{jbplot-package}
 \title{jbplot: A Personal Collection of ggplot2 Themes}
 \description{
-My personal collection of ggplot2 themes and stylings.
+My personal collection of ggplot2 themes and styles.
 }
 \seealso{
 Useful links:
