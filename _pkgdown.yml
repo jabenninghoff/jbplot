@@ -1,11 +1,13 @@
 url: https://jabenninghoff.github.io/jbplot
 
 reference:
-
-- title: "jbplot-package"
-  contents:
-  - jbplot-package
-
-- title: "ggplot2 Style"
-  contents:
-  - theme_quo
+  - title: ggplot2 Themes
+    desc: >
+      Customized ggplot2 themes
+    contents:
+    - theme_quo
+  - title: jbplot Package
+    desc: >
+      jbplot package documentation
+    contents:
+    - jbplot-package
