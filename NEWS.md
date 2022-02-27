@@ -1,3 +1,7 @@
+# jbplot 1.1.1
+
+* Maintenance updates
+
 # jbplot 1.1.0
 
 * Removed `viridis_quo()` function as its method of setting options was problematic for reproducibility
