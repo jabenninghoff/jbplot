@@ -2,6 +2,7 @@
 ^\.github$
 ^\.lintr$
 ^\.Rproj\.user$
+^codecov\.yml$
 ^docs$
 ^jbplot\.Rproj$
 ^LICENSE\.md$
@@ -10,4 +11,3 @@
 ^renv\.lock$
 ^renv$
 ^TODO\.md$
-^codecov\.yml$
