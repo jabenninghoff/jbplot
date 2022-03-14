@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.1.2",
+    "Version": "4.1.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -103,10 +103,10 @@
     },
     "Rcpp": {
       "Package": "Rcpp",
-      "Version": "1.0.8",
+      "Version": "1.0.8.2",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "22b546dd7e337f6c0c58a39983a496bc",
+      "Hash": "6d93fbe4e93e43cbf59fd90d7932c5fb",
       "Requirements": []
     },
     "askpass": {
@@ -118,14 +118,6 @@
       "Requirements": [
         "sys"
       ]
-    },
-    "backports": {
-      "Package": "backports",
-      "Version": "1.4.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "c39fbec8a30d23e721980b8afb31984c",
-      "Requirements": []
     },
     "base64enc": {
       "Package": "base64enc",
@@ -223,10 +215,10 @@
     },
     "commonmark": {
       "Package": "commonmark",
-      "Version": "1.7",
+      "Version": "1.8.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "0f22be39ec1d141fd03683c06f3a6e67",
+      "Hash": "2ba81b120c1655ab696c935ef33ea716",
       "Requirements": []
     },
     "covr": {
@@ -312,13 +304,13 @@
     },
     "desc": {
       "Package": "desc",
-      "Version": "1.4.0",
+      "Version": "1.4.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "28763d08fadd0b733e3cee9dab4e12fe",
+      "Hash": "eebd27ee58fcc58714eedb7aa07d8ad1",
       "Requirements": [
         "R6",
-        "crayon",
+        "cli",
         "rprojroot"
       ]
     },
@@ -692,12 +684,12 @@
       "Version": "2.0.1.9000",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteUsername": "jimhester",
-      "RemoteRepo": "lintr",
-      "RemoteRef": "master",
-      "RemoteSha": "d52a650d733e3a733432530c6cdef8db7533edd7",
       "RemoteHost": "api.github.com",
-      "Hash": "a381958aec68470a7d1110c3aaf7d538",
+      "RemoteRepo": "lintr",
+      "RemoteUsername": "r-lib",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "308be5bc3d3e37dcc0c13812e971fc5792006cda",
+      "Hash": "e587b7cfa264db2292bf9cef7b2973b4",
       "Requirements": [
         "codetools",
         "crayon",
@@ -792,10 +784,10 @@
     },
     "openssl": {
       "Package": "openssl",
-      "Version": "1.4.6",
+      "Version": "2.0.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "69fdf291af288f32fd4cd93315084ea8",
+      "Hash": "cf4329aac12c2c44089974559c18e446",
       "Requirements": [
         "askpass"
       ]
@@ -990,16 +982,16 @@
     },
     "rdev": {
       "Package": "rdev",
-      "Version": "1.2.2",
+      "Version": "1.3.0",
       "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteUsername": "jabenninghoff",
-      "RemoteRepo": "rdev",
-      "RemoteRef": "main",
-      "RemoteSha": "5e54426872208d459ae0262b2f3cae38f700ae8e",
-      "RemoteHost": "api.github.com",
       "Remotes": "r-lib/lintr",
-      "Hash": "448fa07e1a42519566c00a2a97913304",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "rdev",
+      "RemoteUsername": "jabenninghoff",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "51f29db25d21d4b03cd2b342d609eab7df0f8088",
+      "Hash": "39833d5df954236d01e66f6e1fd1e13a",
       "Requirements": [
         "desc",
         "devtools",
@@ -1020,6 +1012,7 @@
         "tibble",
         "usethis",
         "withr",
+        "xml2",
         "yaml"
       ]
     },
@@ -1043,10 +1036,10 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.15.2",
+      "Version": "0.15.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "206c4ef8b7ad6fb1060d69aa7b9dfe69",
+      "Hash": "c1078316e1d4f70275fc1ea60c0bc431",
       "Requirements": []
     },
     "rex": {
@@ -1061,19 +1054,20 @@
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "1.0.1",
+      "Version": "1.0.2",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "3bf0219f19d9f5b3c682acbb3546a151",
+      "Hash": "04884d9a75d778aca22c7154b8333ec9",
       "Requirements": []
     },
     "rmarkdown": {
       "Package": "rmarkdown",
-      "Version": "2.11",
+      "Version": "2.13",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "320017b52d05a943981272b295750388",
+      "Hash": "ac78f4d2e0289d4cba73b88af567b8b1",
       "Requirements": [
+        "bslib",
         "evaluate",
         "htmltools",
         "jquerylib",
@@ -1267,23 +1261,20 @@
     },
     "styler": {
       "Package": "styler",
-      "Version": "1.6.2",
+      "Version": "1.7.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "d9e85c794c5a723aabed32a49926186a",
+      "Hash": "6cc6b1eb8f318b15fae4b81fe0a0d82e",
       "Requirements": [
         "R.cache",
-        "backports",
         "cli",
-        "glue",
         "magrittr",
         "purrr",
         "rematch2",
         "rlang",
         "rprojroot",
         "tibble",
-        "withr",
-        "xfun"
+        "withr"
       ]
     },
     "sys": {
@@ -1296,10 +1287,10 @@
     },
     "sysfonts": {
       "Package": "sysfonts",
-      "Version": "0.8.5",
+      "Version": "0.8.8",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "d5e2db91a3aa1ac242a6edb6b2093eb5",
+      "Hash": "7f4dac41a3e348ae12832167e6beb875",
       "Requirements": []
     },
     "systemfonts": {
@@ -1460,18 +1451,18 @@
     },
     "withr": {
       "Package": "withr",
-      "Version": "2.4.3",
+      "Version": "2.5.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "a376b424c4817cda4920bbbeb3364e85",
+      "Hash": "c0e49a9760983e81e55cdd9be92e7182",
       "Requirements": []
     },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.29",
+      "Version": "0.30",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e2e5fb1a74fbb68b27d6efc5372635dc",
+      "Hash": "e83f48136b041845e50a6658feffb197",
       "Requirements": []
     },
     "xml2": {
