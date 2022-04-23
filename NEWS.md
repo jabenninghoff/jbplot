@@ -1,3 +1,9 @@
+# jbplot 1.1.4
+
+* Updated `rdev::use_rdev_package()` and `rdev::use_codecov()`
+
+* Updated for R version 4.2.0 (2022-04-22) -- "Vigorous Calisthenics"
+
 # jbplot 1.1.3
 
 * Maintenance updates
