@@ -13,14 +13,18 @@ Imports:
     ggplot2
 Suggests: 
     covr,
+    desc,
     devtools,
     DT,
+    fs,
     knitr,
-    rdev (>= 0.8.9),
+    pkgdown,
+    rdev,
     rmarkdown,
     showtext,
     spelling,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    withr
 VignetteBuilder: 
     knitr
 Remotes: 
