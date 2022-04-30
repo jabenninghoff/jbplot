@@ -1,3 +1,7 @@
+# jbplot 1.1.5
+
+* Maintenance updates
+
 # jbplot 1.1.4
 
 * Updated `rdev::use_rdev_package()` and `rdev::use_codecov()`
