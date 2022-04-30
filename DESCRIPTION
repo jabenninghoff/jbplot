@@ -9,23 +9,24 @@ License: MIT + file LICENSE
 URL: https://jabenninghoff.github.io/jbplot,
     https://github.com/jabenninghoff/jbplot
 BugReports: https://github.com/jabenninghoff/jbplot/issues
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
 Imports:
     ggplot2
 Suggests: 
-    showtext,
+    covr,
     devtools,
+    DT,
     knitr,
     rdev (>= 0.8.9),
     rmarkdown,
-    testthat (>= 3.0.0),
+    showtext,
     spelling,
-    covr,
-    DT
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
 Remotes: 
     jabenninghoff/rdev
 Config/testthat/edition: 3
-VignetteBuilder: knitr
+Encoding: UTF-8
 Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
