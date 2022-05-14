@@ -1,3 +1,7 @@
+# jbplot 1.1.6
+
+* Updated `rdev::use_lintr()`
+
 # jbplot 1.1.5
 
 * Maintenance updates
