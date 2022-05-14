@@ -3,7 +3,7 @@ pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   jbplot-style: jbplot-style.html
-last_built: 2022-04-30T16:52Z
+last_built: 2022-05-14T23:42Z
 urls:
   reference: https://jabenninghoff.github.io/jbplot/reference
   article: https://jabenninghoff.github.io/jbplot/articles
