@@ -3,7 +3,7 @@ pkg_dir <- list.files("../../00_pkg_src", full.names = TRUE)
 if (!length(pkg_dir)) {
   # This is where it is on e.g. win builder
   check_dir <- dirname(dirname(getwd()))
-  if (grepl("\\.Rcheck$", check_dir)) {
+  if (endsWith(check_dir, ".Rcheck")) {
     source_dir <- sub("\\.Rcheck$", "", check_dir)
     if (file.exists(source_dir)) {
       pkg_dir <- source_dir
@@ -32,6 +32,6 @@ test_that("Notebooks have no spelling errors", {
     results <- rdev::spell_check_notebooks()
     expect_true(is.null(results$word) || identical(results$word, character(0)))
   } else {
-    expect_error(rdev::spell_check_notebooks(), "'analysis' directory not found")
+    expect_error(rdev::spell_check_notebooks(), "^'analysis' directory not found$")
   }
 })
