@@ -1,3 +1,9 @@
+# jbplot 1.1.7
+
+* Replace development lintr with CRAN release 3.0.0
+
+* Updated `rdev::use_rdev_package()` and `rdev::use_spelling()`
+
 # jbplot 1.1.6
 
 * Updated `rdev::use_lintr()`
