@@ -8,7 +8,11 @@ linters: linters_with_tags(
     nonportable_path_linter = NULL,
     todo_comment_linter = NULL,
     undesirable_function_linter(
-      within(all_undesirable_functions, rm(ifelse, library, require, return))
+      within(all_undesirable_functions, rm(ifelse, library, require))
     ),
-    undesirable_operator_linter(all_undesirable_operators)
+    undesirable_operator_linter(all_undesirable_operators),
+    unneeded_concatenation_linter(allow_single_expression = FALSE),
+    unused_import_linter(
+      except_packages = c("bit64", "data.table", "tidyverse", pkgload::pkg_name("."))
+    )
   )
