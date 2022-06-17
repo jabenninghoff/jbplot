@@ -19,6 +19,7 @@ Suggests:
     fs,
     knitr,
     pkgdown,
+    pkgload,
     rdev,
     rmarkdown,
     showtext,
