@@ -14,7 +14,8 @@ linters: linters_with_tags(
     unneeded_concatenation_linter(allow_single_expression = FALSE),
     unused_import_linter(
       # temporarily exclude showtext until lintr issue is resolved, then move to .lintr exclude:
-      # issue: https://github.com/r-lib/lintr/issues/1401
+      # ~~issue: https://github.com/r-lib/lintr/issues/1401~~
+      # issue: https://github.com/r-lib/lintr/issues/1413
       except_packages = c("bit64", "data.table", "tidyverse", pkgload::pkg_name("."), "showtext")
     )
   )
