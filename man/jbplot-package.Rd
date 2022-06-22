@@ -11,7 +11,7 @@ My personal collection of ggplot2 themes and styles.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://jabenninghoff.github.io/jbplot}
+  \item \url{https://jabenninghoff.github.io/jbplot/}
   \item \url{https://github.com/jabenninghoff/jbplot}
   \item Report bugs at \url{https://github.com/jabenninghoff/jbplot/issues}
 }
