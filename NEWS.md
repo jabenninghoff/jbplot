@@ -1,3 +1,7 @@
+# jbplot 1.1.8
+
+* Update links
+
 # jbplot 1.1.7
 
 * Replace development lintr with CRAN release 3.0.0
