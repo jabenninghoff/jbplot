@@ -13,11 +13,12 @@ linters: linters_with_tags(
     undesirable_operator_linter(all_undesirable_operators),
     unneeded_concatenation_linter(allow_single_expression = FALSE),
     unused_import_linter(
-      # temporarily exclude showtext until lintr issue is resolved, then move to .lintr exclude:
-      # ~~issue: https://github.com/r-lib/lintr/issues/1401~~
-      # issue: https://github.com/r-lib/lintr/issues/1413
-      # closed via: https://github.com/r-lib/lintr/pull/1417
-      # TODO: update to lintr >= 3.0.1 (or greater) when released
-      except_packages = c("bit64", "data.table", "tidyverse", pkgload::pkg_name("."), "showtext")
+      except_packages = c("bit64", "data.table", "tidyverse", pkgload::pkg_name("."))
+    )
+  )
+exclusions: list(
+    # showtext is activated by fig.showtext = TRUE
+    "vignettes/jbplot-style.Rmd" = list(
+      unused_import_linter = 20
     )
   )
