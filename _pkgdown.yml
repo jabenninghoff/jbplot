@@ -12,6 +12,7 @@ reference:
     contents:
     - geom_rlm
     - geom_hist_bw
+    - annotate_quo
   - title: jbplot Package
     desc: >
       jbplot package documentation
