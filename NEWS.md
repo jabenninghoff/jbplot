@@ -6,6 +6,8 @@ Added ggplot2 convenience functions:
 
 * `geom_hist_bw()`: wrapper for `ggplot2::geom_histogram()` that sets `color` to `black` and `fill` to `white`
 
+* `annotate_quo()`: wrapper for `ggplot2::annotate()` that sets the font to Lato
+
 # jbplot 1.1.8
 
 * Update links
