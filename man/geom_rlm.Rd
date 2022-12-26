@@ -94,7 +94,8 @@ that define both data and aesthetics and shouldn't inherit behaviour from
 the default plot specification, e.g. \code{\link[ggplot2:borders]{borders()}}.}
 }
 \description{
-A wrapper for \code{\link[ggplot2:geom_smooth]{ggplot2::geom_smooth()}} that sets \verb{method = }\code{\link[MASS:rlm]{MASS::rlm()}} and \code{formula = y ~ x}.
+A wrapper for \code{\link[ggplot2:geom_smooth]{ggplot2::geom_smooth()}} that sets \code{method} to \code{\link[MASS:rlm]{MASS::rlm()}} and \code{formula} to
+\code{y ~ x}.
 }
 \examples{
 library(ggplot2)
