@@ -75,3 +75,28 @@ theme_quo <- function(major = TRUE,
 
   gg
 }
+
+#' Robust linear smoothing
+#'
+#' A wrapper for [ggplot2::geom_smooth()] that sets `method = `[MASS::rlm()] and `formula = y ~ x`.
+#'
+#' @inheritParams ggplot2::geom_smooth
+#' @importFrom MASS rlm
+#' @export
+geom_rlm <- function(mapping = NULL,
+                     data = NULL,
+                     position = "identity",
+                     ...,
+                     method = MASS::rlm,
+                     formula = y ~ x,
+                     se = TRUE,
+                     na.rm = FALSE, # nolint: object_name_linter.
+                     orientation = NA,
+                     show.legend = NA, # nolint: object_name_linter.
+                     inherit.aes = TRUE) { # nolint: object_name_linter.
+  ggplot2::geom_smooth(
+    mapping = mapping, data = data, position = position, ..., method = method, formula = formula,
+    se = se, na.rm = na.rm, orientation = orientation, show.legend = show.legend,
+    inherit.aes = inherit.aes
+  )
+}
