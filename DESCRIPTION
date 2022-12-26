@@ -10,7 +10,8 @@ URL: https://jabenninghoff.github.io/jbplot/,
     https://github.com/jabenninghoff/jbplot
 BugReports: https://github.com/jabenninghoff/jbplot/issues
 Imports:
-    ggplot2
+    ggplot2,
+    MASS
 Suggests: 
     covr,
     desc,
