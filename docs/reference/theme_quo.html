@@ -18,7 +18,7 @@ Viridis Quo!"><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/lib
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">jbplot</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.8</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.2.0</span>
       </span>
     </div>
 
@@ -65,16 +65,16 @@ Viridis Quo!"><!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/lib
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">theme_quo</span><span class="op">(</span>
-  major <span class="op">=</span> <span class="cn">TRUE</span>,
-  major.x <span class="op">=</span> <span class="cn">TRUE</span>,
-  major.y <span class="op">=</span> <span class="cn">TRUE</span>,
-  minor <span class="op">=</span> <span class="cn">TRUE</span>,
-  minor.x <span class="op">=</span> <span class="cn">TRUE</span>,
-  minor.y <span class="op">=</span> <span class="cn">TRUE</span>,
-  x <span class="op">=</span> <span class="cn">TRUE</span>,
-  y <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">theme_quo</span><span class="op">(</span></span>
+<span>  major <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  major.x <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  major.y <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  minor <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  minor.x <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  minor.y <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  x <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  y <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -97,30 +97,28 @@ setting the appropriate panel.grid element to <code><a href="https://ggplot2.tid
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># adapted from ggplot2::theme_minimal()</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/yixuan/showtext" class="external-link">showtext</a></span><span class="op">)</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: sysfonts</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: showtextdb</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html" class="external-link">font_add_google</a></span><span class="op">(</span><span class="st">"Lato"</span>, <span class="st">"Lato"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html" class="external-link">showtext_auto</a></span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-in"><span class="co"># workaround for https://github.com/yixuan/showtext/issues/51</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html" class="external-link">showtext_opts</a></span><span class="op">(</span>dpi <span class="op">=</span> <span class="fl">192</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">mtcars</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">wt</span>, y <span class="op">=</span> <span class="va">mpg</span>, color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">cyl</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span></span>
-<span class="r-in">    title <span class="op">=</span> <span class="st">"Fuel economy declines as weight increases"</span>,</span>
-<span class="r-in">    subtitle <span class="op">=</span> <span class="st">"(1973-74)"</span>,</span>
-<span class="r-in">    caption <span class="op">=</span> <span class="st">"Data from the 1974 Motor Trend US magazine."</span>,</span>
-<span class="r-in">    tag <span class="op">=</span> <span class="st">"Figure 1"</span>,</span>
-<span class="r-in">    x <span class="op">=</span> <span class="st">"Weight (1000 lbs)"</span>,</span>
-<span class="r-in">    y <span class="op">=</span> <span class="st">"Fuel economy (mpg)"</span>,</span>
-<span class="r-in">    color <span class="op">=</span> <span class="st">"Gears"</span></span>
-<span class="r-in">  <span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu">theme_quo</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html" class="external-link">scale_color_viridis_d</a></span><span class="op">(</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># adapted from ggplot2::theme_minimal()</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/yixuan/showtext" class="external-link">showtext</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/sysfonts/man/font_add_google.html" class="external-link">font_add_google</a></span><span class="op">(</span><span class="st">"Lato"</span>, <span class="st">"Lato"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/showtext/man/showtext_auto.html" class="external-link">showtext_auto</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co"># workaround for https://github.com/yixuan/showtext/issues/51</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/showtext/man/showtext_opts.html" class="external-link">showtext_opts</a></span><span class="op">(</span>dpi <span class="op">=</span> <span class="fl">192</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">mtcars</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">wt</span>, y <span class="op">=</span> <span class="va">mpg</span>, color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">cyl</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>    title <span class="op">=</span> <span class="st">"Fuel economy declines as weight increases"</span>,</span></span>
+<span class="r-in"><span>    subtitle <span class="op">=</span> <span class="st">"(1973-74)"</span>,</span></span>
+<span class="r-in"><span>    caption <span class="op">=</span> <span class="st">"Data from the 1974 Motor Trend US magazine."</span>,</span></span>
+<span class="r-in"><span>    tag <span class="op">=</span> <span class="st">"Figure 1"</span>,</span></span>
+<span class="r-in"><span>    x <span class="op">=</span> <span class="st">"Weight (1000 lbs)"</span>,</span></span>
+<span class="r-in"><span>    y <span class="op">=</span> <span class="st">"Fuel economy (mpg)"</span>,</span></span>
+<span class="r-in"><span>    color <span class="op">=</span> <span class="st">"Gears"</span></span></span>
+<span class="r-in"><span>  <span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu">theme_quo</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html" class="external-link">scale_color_viridis_d</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="theme_quo-1.png" alt="" width="700" height="433"></span>
 </code></pre></div>
     </div>
@@ -136,7 +134,7 @@ setting the appropriate panel.grid element to <code><a href="https://ggplot2.tid
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.4.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
