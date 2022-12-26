@@ -6,6 +6,11 @@ reference:
       Customized ggplot2 themes
     contents:
     - theme_quo
+  - title: ggplot2 Functions
+    desc: >
+      ggplot2 convenience functions
+    contents:
+    - geom_rlm
   - title: jbplot Package
     desc: >
       jbplot package documentation
