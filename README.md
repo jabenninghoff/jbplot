@@ -37,8 +37,8 @@ renv::install("jabenninghoff/jbplot")
 
 ## Development
 
--   Changelog: See “Changelog” or `NEWS.md`.
--   Planned: [TODO](TODO.md)
+- Changelog: See “Changelog” or `NEWS.md`.
+- Planned: [TODO](TODO.md)
 
 ## Examples
 
