@@ -82,6 +82,12 @@ theme_quo <- function(major = TRUE,
 #'
 #' @inheritParams ggplot2::geom_smooth
 #' @importFrom MASS rlm
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(mpg, aes(displ, hwy)) +
+#'   geom_point() +
+#'   geom_rlm()
 #' @export
 geom_rlm <- function(mapping = NULL,
                      data = NULL,
