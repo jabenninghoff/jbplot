@@ -12,4 +12,5 @@ lintr
 macOS
 renv
 reproducibility
+unscaled
 viridis
