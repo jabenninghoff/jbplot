@@ -96,3 +96,10 @@ the default plot specification, e.g. \code{\link[ggplot2:borders]{borders()}}.}
 \description{
 A wrapper for \code{\link[ggplot2:geom_smooth]{ggplot2::geom_smooth()}} that sets \verb{method = }\code{\link[MASS:rlm]{MASS::rlm()}} and \code{formula = y ~ x}.
 }
+\examples{
+library(ggplot2)
+
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point() +
+  geom_rlm()
+}
