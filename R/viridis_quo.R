@@ -107,3 +107,36 @@ geom_rlm <- function(mapping = NULL,
     inherit.aes = inherit.aes
   )
 }
+
+#' Black and white histogram
+#'
+#' A wrapper for [ggplot2::geom_histogram()] that sets `color` to `black` and `fill` to `white`.
+#'
+#' @inheritParams ggplot2::geom_histogram
+#' @param color Histogram color. Defaults to `"black"`.
+#' @param fill Histogram fill. Defaults to `"white"`.
+#'
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(mpg, aes(hwy)) +
+#'   geom_hist_bw(binwidth = 1)
+#' @export
+geom_hist_bw <- function(mapping = NULL,
+                         data = NULL,
+                         position = "stack",
+                         color = "black",
+                         fill = "white",
+                         ...,
+                         binwidth = NULL,
+                         bins = NULL,
+                         na.rm = FALSE, # nolint: object_name_linter.
+                         orientation = NA,
+                         show.legend = NA, # nolint: object_name_linter.
+                         inherit.aes = TRUE) { # nolint: object_name_linter.
+  ggplot2::geom_histogram(
+    mapping = mapping, data = data, position = position, color = color, fill = fill, ...,
+    binwidth = binwidth, bins = bins, na.rm = na.rm, orientation = orientation,
+    show.legend = show.legend, inherit.aes = inherit.aes
+  )
+}

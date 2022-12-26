@@ -4,6 +4,8 @@ Added ggplot2 convenience functions:
 
 * `geom_rlm()`: wrapper for `ggplot2::geom_smooth()` that sets `method` to `MASS::rlm()` and `formula` to `y ~ x`
 
+* `geom_hist_bw()`: wrapper for `ggplot2::geom_histogram()` that sets `color` to `black` and `fill` to `white`
+
 # jbplot 1.1.8
 
 * Update links

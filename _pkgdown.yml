@@ -11,6 +11,7 @@ reference:
       ggplot2 convenience functions
     contents:
     - geom_rlm
+    - geom_hist_bw
   - title: jbplot Package
     desc: >
       jbplot package documentation
