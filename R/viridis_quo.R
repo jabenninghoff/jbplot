@@ -78,7 +78,8 @@ theme_quo <- function(major = TRUE,
 
 #' Robust linear smoothing
 #'
-#' A wrapper for [ggplot2::geom_smooth()] that sets `method = `[MASS::rlm()] and `formula = y ~ x`.
+#' A wrapper for [ggplot2::geom_smooth()] that sets `method` to [MASS::rlm()] and `formula` to
+#'   `y ~ x`.
 #'
 #' @inheritParams ggplot2::geom_smooth
 #' @importFrom MASS rlm
