@@ -1,3 +1,9 @@
+# jbplot 1.2.0
+
+Added ggplot2 convenience functions:
+
+* `geom_rlm()`: wrapper for `ggplot2::geom_smooth()` that sets `method` to `MASS::rlm()` and `formula` to `y ~ x`
+
 # jbplot 1.1.8
 
 * Update links
