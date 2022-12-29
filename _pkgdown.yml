@@ -10,9 +10,10 @@ reference:
     desc: >
       ggplot2 convenience functions
     contents:
-    - geom_rlm
-    - geom_hist_bw
     - annotate_quo
+    - geom_hist_bw
+    - geom_lm
+    - geom_rlm
   - title: jbplot Package
     desc: >
       jbplot package documentation

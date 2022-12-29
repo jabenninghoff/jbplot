@@ -108,6 +108,36 @@ geom_rlm <- function(mapping = NULL,
   )
 }
 
+#' Linear smoothing
+#'
+#' A wrapper for [ggplot2::geom_smooth()] that sets `method` to [lm()] and `formula` to `y ~ x`.
+#'
+#' @inheritParams ggplot2::geom_smooth
+#' @examples
+#' library(ggplot2)
+#'
+#' ggplot(mpg, aes(displ, hwy)) +
+#'   geom_point() +
+#'   geom_lm()
+#' @export
+geom_lm <- function(mapping = NULL,
+                    data = NULL,
+                    position = "identity",
+                    ...,
+                    method = "lm",
+                    formula = y ~ x,
+                    se = TRUE,
+                    na.rm = FALSE, # nolint: object_name_linter.
+                    orientation = NA,
+                    show.legend = NA, # nolint: object_name_linter.
+                    inherit.aes = TRUE) { # nolint: object_name_linter.
+  ggplot2::geom_smooth(
+    mapping = mapping, data = data, position = position, ..., method = method, formula = formula,
+    se = se, na.rm = na.rm, orientation = orientation, show.legend = show.legend,
+    inherit.aes = inherit.aes
+  )
+}
+
 #' Black and white histogram
 #'
 #' A wrapper for [ggplot2::geom_histogram()] that sets `color` to `black` and `fill` to `white`.
