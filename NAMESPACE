@@ -2,6 +2,7 @@
 
 export(annotate_quo)
 export(geom_hist_bw)
+export(geom_lm)
 export(geom_rlm)
 export(theme_quo)
 importFrom(MASS,rlm)
