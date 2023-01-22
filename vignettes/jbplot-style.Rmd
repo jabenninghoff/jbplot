@@ -81,7 +81,6 @@ txsamp <- subset(txhousing, city %in% c("Houston", "Fort Worth", "San Antonio", 
 The same plots after applying viridis and quo:
 
 ```{r viridis_quo, fig.showtext = TRUE}
-
 d + scale_color_viridis_d() + theme_quo()
 p + scale_fill_viridis_d() + theme_quo()
 v + scale_fill_viridis_c() + theme_quo()
