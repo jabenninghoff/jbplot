@@ -1,3 +1,7 @@
+# jbplot 1.2.2
+
+* Maintenance updates
+
 # jbplot 1.2.1
 
 * Added `geom_lm()`: wrapper for `ggplot2::geom_smooth()` that sets `method` to `lm()` and `formula` to `y ~ x`
