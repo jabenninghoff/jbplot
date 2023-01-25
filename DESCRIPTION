@@ -26,6 +26,7 @@ Suggests:
     showtext,
     spelling,
     testthat (>= 3.0.0),
+    usethis,
     withr
 VignetteBuilder: 
     knitr
