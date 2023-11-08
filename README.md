@@ -24,8 +24,8 @@ You can install the development version of jbplot from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("jabenninghoff/jbplot")
+# install.packages("remotes")
+remotes::install_github("jabenninghoff/jbplot")
 ```
 
 Or using renv:
