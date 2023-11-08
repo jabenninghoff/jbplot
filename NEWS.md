@@ -1,3 +1,7 @@
+# jbplot 1.2.8
+
+* Update site to Bootstrap 5
+
 # jbplot 1.2.7
 
 * Updated installation instructions

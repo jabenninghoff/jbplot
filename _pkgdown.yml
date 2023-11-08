@@ -1,4 +1,6 @@
 url: https://jabenninghoff.github.io/jbplot/
+template:
+  bootstrap: 5
 
 reference:
   - title: ggplot2 Themes
