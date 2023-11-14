@@ -1,3 +1,7 @@
+# jbplot 1.2.9
+
+* Moved "jbplot ggplot2 style" vignette to "Get Started" article
+
 # jbplot 1.2.8
 
 * Update site to Bootstrap 5

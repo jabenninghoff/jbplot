@@ -65,5 +65,5 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
 
 <img src="man/figures/README-mtcars-1.png" width="100%" />
 
-For more information, see the “jbplot ggplot2 style”
-[vignette](https://jabenninghoff.github.io/jbplot/articles/jbplot-style.html).
+For more information, see the “jbplot ggplot2 style” get started
+[vignette](https://jabenninghoff.github.io/jbplot/articles/jbplot.html).
