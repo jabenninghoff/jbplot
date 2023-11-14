@@ -71,4 +71,4 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   scale_color_viridis_d()
 ```
 
-For more information, see the "jbplot ggplot2 style" [vignette](https://jabenninghoff.github.io/jbplot/articles/jbplot-style.html).
+For more information, see the "jbplot ggplot2 style" get started [vignette](https://jabenninghoff.github.io/jbplot/articles/jbplot.html).
