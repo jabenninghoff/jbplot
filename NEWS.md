@@ -1,3 +1,7 @@
+# jbplot 1.2.10
+
+* Site rendering fixes
+
 # jbplot 1.2.9
 
 * Moved "jbplot ggplot2 style" vignette to "Get Started" article
