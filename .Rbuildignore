@@ -10,4 +10,3 @@
 ^README\.Rmd$
 ^renv\.lock$
 ^renv$
-^TODO\.md$
