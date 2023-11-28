@@ -41,7 +41,7 @@
 #'   theme_quo() +
 #'   scale_color_viridis_d()
 #' @export
-# nolint start: snake_case_linter
+# nolint start: object_name_linter.
 theme_quo <- function(major = TRUE,
                       major.x = TRUE,
                       major.y = TRUE,
@@ -51,6 +51,15 @@ theme_quo <- function(major = TRUE,
                       x = TRUE,
                       y = TRUE) {
   # nolint end
+  checkmate::assert_flag(major)
+  checkmate::assert_flag(major.x)
+  checkmate::assert_flag(major.y)
+  checkmate::assert_flag(minor)
+  checkmate::assert_flag(minor.x)
+  checkmate::assert_flag(minor.y)
+  checkmate::assert_flag(x)
+  checkmate::assert_flag(y)
+
   gg <- ggplot2::theme_minimal(base_family = "Lato") +
     ggplot2::theme(
       plot.title = ggplot2::element_text(face = "bold"),
