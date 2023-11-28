@@ -1,3 +1,7 @@
+# jbplot 1.3.1
+
+* Maintenance updates
+
 # jbplot 1.3.0
 
 * Check `theme_quo()` arguments with [checkmate](https://mllg.github.io/checkmate/index.html)

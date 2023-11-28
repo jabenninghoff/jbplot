@@ -1,6 +1,6 @@
 # theme_quo
 
-test_that("theme_quo validates parameters", {
+test_that("theme_quo validates arguments", {
   expect_error(theme_quo(major = NA), "'major'")
   expect_error(theme_quo(major.x = NA), "'major.x'")
   expect_error(theme_quo(major.y = NA), "'major.y'")
