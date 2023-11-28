@@ -1262,15 +1262,16 @@
     },
     "rdev": {
       "Package": "rdev",
-      "Version": "1.8.5",
+      "Version": "1.8.6",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "jabenninghoff",
       "RemoteRepo": "rdev",
       "RemoteRef": "main",
-      "RemoteSha": "aad61192abd4904947cebbd8a27f7f9f75260839",
+      "RemoteSha": "c05061d2e8643a144e13bd935fe506747bd100cd",
       "Requirements": [
+        "checkmate",
         "cli",
         "curl",
         "desc",
@@ -1301,7 +1302,7 @@
         "xml2",
         "yaml"
       ],
-      "Hash": "9d3b5de3c160d2ec9367508b918aa36d"
+      "Hash": "c2bc447792be96ca346a94308ddd7851"
     },
     "rematch2": {
       "Package": "rematch2",
@@ -1475,21 +1476,23 @@
     },
     "scales": {
       "Package": "scales",
-      "Version": "1.2.1",
+      "Version": "1.3.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "R6",
         "RColorBrewer",
+        "cli",
         "farver",
+        "glue",
         "labeling",
         "lifecycle",
         "munsell",
         "rlang",
         "viridisLite"
       ],
-      "Hash": "906cb23d2f1c5680b8ce439b44c6fa63"
+      "Hash": "c19df082ba346b0ffa6f833e92de34d1"
     },
     "sessioninfo": {
       "Package": "sessioninfo",
