@@ -68,19 +68,11 @@ theme_quo <- function(major = TRUE,
     )
 
   if (!major) gg <- gg + ggplot2::theme(panel.grid.major = ggplot2::element_blank())
-  if (!major.x) gg <- gg + ggplot2::theme(panel.grid.major.x = ggplot2::element_blank())
-  if (!major.y) gg <- gg + ggplot2::theme(panel.grid.major.y = ggplot2::element_blank())
+  if (!major.x || !x) gg <- gg + ggplot2::theme(panel.grid.major.x = ggplot2::element_blank())
+  if (!major.y || !y) gg <- gg + ggplot2::theme(panel.grid.major.y = ggplot2::element_blank())
   if (!minor) gg <- gg + ggplot2::theme(panel.grid.minor = ggplot2::element_blank())
-  if (!minor.x) gg <- gg + ggplot2::theme(panel.grid.minor.x = ggplot2::element_blank())
-  if (!minor.y) gg <- gg + ggplot2::theme(panel.grid.minor.y = ggplot2::element_blank())
-  if (!x) {
-    gg <- gg + ggplot2::theme(panel.grid.major.x = ggplot2::element_blank()) +
-      ggplot2::theme(panel.grid.minor.x = ggplot2::element_blank())
-  }
-  if (!y) {
-    gg <- gg + ggplot2::theme(panel.grid.major.y = ggplot2::element_blank()) +
-      ggplot2::theme(panel.grid.minor.y = ggplot2::element_blank())
-  }
+  if (!minor.x || !x) gg <- gg + ggplot2::theme(panel.grid.minor.x = ggplot2::element_blank())
+  if (!minor.y || !y) gg <- gg + ggplot2::theme(panel.grid.minor.y = ggplot2::element_blank())
 
   gg
 }
