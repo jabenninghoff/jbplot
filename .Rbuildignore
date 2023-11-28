@@ -1,4 +1,5 @@
 ^_pkgdown\.yml$
+^\.covrignore$
 ^\.github$
 ^\.lintr$
 ^\.Rproj\.user$
