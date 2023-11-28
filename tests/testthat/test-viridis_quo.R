@@ -1,5 +1,16 @@
 # theme_quo
 
+test_that("theme_quo validates parameters", {
+  expect_error(theme_quo(major = NA), "'major'")
+  expect_error(theme_quo(major.x = NA), "'major.x'")
+  expect_error(theme_quo(major.y = NA), "'major.y'")
+  expect_error(theme_quo(minor = NA), "'minor'")
+  expect_error(theme_quo(minor.x = NA), "'minor.x'")
+  expect_error(theme_quo(minor.y = NA), "'minor.y'")
+  expect_error(theme_quo(x = NA), "'x'")
+  expect_error(theme_quo(y = NA), "'y'")
+})
+
 test_that("theme_quo sets theme properties", {
   gg <- theme_quo()
 
