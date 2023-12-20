@@ -1,3 +1,7 @@
+# jbplot 1.3.3
+
+* Maintenance updates
+
 # jbplot 1.3.2
 
 * Maintenance updates
