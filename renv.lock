@@ -925,7 +925,7 @@
     },
     "mgcv": {
       "Package": "mgcv",
-      "Version": "1.9-0",
+      "Version": "1.9-1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -938,7 +938,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "086028ca0460d0c368028d3bda58f31b"
+      "Hash": "110ee9d83b496279960e162ac97764ce"
     },
     "mime": {
       "Package": "mime",
@@ -1261,14 +1261,14 @@
     },
     "rdev": {
       "Package": "rdev",
-      "Version": "1.9.2",
+      "Version": "1.9.4",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "jabenninghoff",
       "RemoteRepo": "rdev",
       "RemoteRef": "main",
-      "RemoteSha": "2272b024e70514b1b0aba3b9e4a1cf957f8a5f43",
+      "RemoteSha": "c24990d76c512271335c7690c16512c641756048",
       "Requirements": [
         "checkmate",
         "cli",
@@ -1302,7 +1302,7 @@
         "xml2",
         "yaml"
       ],
-      "Hash": "75e60716873e1093ab9c80e449390184"
+      "Hash": "6d05ffe00c98ac428ecbb4430be19493"
     },
     "rematch2": {
       "Package": "rematch2",
