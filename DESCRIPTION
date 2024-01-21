@@ -1,6 +1,6 @@
 Package: jbplot
 Title: A Personal Collection of ggplot2 Themes
-Version: 1.3.4
+Version: 1.3.4.9000
 Authors@R: 
     person("John", "Benninghoff", , "jbenninghoff@mac.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-6230-4742"))
