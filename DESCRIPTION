@@ -12,7 +12,8 @@ BugReports: https://github.com/jabenninghoff/jbplot/issues
 Imports:
     checkmate,
     ggplot2,
-    MASS
+    MASS,
+    rlang
 Suggests: 
     covr,
     desc,
