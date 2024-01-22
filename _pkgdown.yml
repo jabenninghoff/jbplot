@@ -12,12 +12,13 @@ reference:
     - theme_quo
   - title: ggplot2 Functions
     desc: >
-      ggplot2 convenience functions
+      ggplot2 convenience and custom functions
     contents:
     - annotate_quo
     - geom_hist_bw
     - geom_lm
     - geom_rlm
+    - ggplot_donut
   - title: jbplot Package
     desc: >
       jbplot package documentation

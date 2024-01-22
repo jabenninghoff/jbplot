@@ -11,8 +11,8 @@ test_that("ggplot_donut validates parameters", {
   bad_df <- data.frame(
     n = c(10, 60, 30)
   )
-  expect_error(ggplot_donut(1), "'df'")
-  expect_error(ggplot_donut(bad_df), "'df'")
+  expect_error(ggplot_donut(1), "'data'")
+  expect_error(ggplot_donut(bad_df), "'data'")
   expect_error(ggplot_donut(test_df, group = "", "'group'"))
   expect_error(ggplot_donut(test_df, value = "", "'value'"))
   expect_error(ggplot_donut(test_df, hsize = -1, "'hsize'"))
