@@ -31,6 +31,13 @@ ggplot_donut <- function(data, group = "group", value = "n", hsize = 2) {
   checkmate::assert_string(value, min.chars = 1)
   checkmate::assert_number(hsize, lower = 0, finite = TRUE)
 
+  # For xlim of c(0, size), the smallest possible value of size is 0.95, which creates a pie chart
+  # (determined through trial and error).
+  #
+  # Setting aes(x = hsize) and xlim(c(0, hsize + 0.5)) roughly follows R CHARTS and is arbitrary.
+  #
+  # Since we want a hole size of 0 to be a pie chart, we add 0.45 to hsize on the next line, which
+  # gives size = 0.45 + 0 + 0.5 = 0.95.
   hsize <- 0.45 + hsize
   ggplot2::ggplot(data, ggplot2::aes(x = hsize, y = .data[[value]], fill = .data[[group]])) +
     ggplot2::geom_col() +
