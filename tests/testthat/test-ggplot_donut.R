@@ -7,6 +7,18 @@ test_df <- data.frame(
 )
 gg <- ggplot_donut(test_df)
 
+test_that("ggplot_donut validates parameters", {
+  bad_df <- data.frame(
+    n = c(10, 60, 30)
+  )
+  expect_error(ggplot_donut(1), "'df'")
+  expect_error(ggplot_donut(bad_df), "'df'")
+  expect_error(ggplot_donut(test_df, group = "", "'group'"))
+  expect_error(ggplot_donut(test_df, value = "", "'value'"))
+  expect_error(ggplot_donut(test_df, hsize = -1, "'hsize'"))
+  expect_error(ggplot_donut(test_df, hsize = Inf, "'hsize'"))
+})
+
 test_that("ggplot_donut uses geom_col()", {
   expect_s3_class(gg[["layers"]][[1]][["geom"]], "GeomCol")
 })
