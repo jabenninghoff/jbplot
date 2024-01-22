@@ -13,7 +13,8 @@ Imports:
     checkmate,
     ggplot2,
     MASS,
-    rlang
+    rlang,
+    scales
 Suggests: 
     covr,
     desc,

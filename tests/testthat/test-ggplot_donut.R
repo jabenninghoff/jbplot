@@ -13,10 +13,10 @@ test_that("ggplot_donut validates parameters", {
   )
   expect_error(ggplot_donut(1), "'data'")
   expect_error(ggplot_donut(bad_df), "'data'")
-  expect_error(ggplot_donut(test_df, group = "", "'group'"))
-  expect_error(ggplot_donut(test_df, value = "", "'value'"))
-  expect_error(ggplot_donut(test_df, hsize = -1, "'hsize'"))
-  expect_error(ggplot_donut(test_df, hsize = Inf, "'hsize'"))
+  expect_error(ggplot_donut(test_df, group = ""), "'group'")
+  expect_error(ggplot_donut(test_df, value = ""), "'value'")
+  expect_error(ggplot_donut(test_df, hsize = -1), "'hsize'")
+  expect_error(ggplot_donut(test_df, hsize = Inf), "'hsize'")
 })
 
 test_that("ggplot_donut uses geom_col()", {
@@ -43,4 +43,37 @@ test_that("ggplot_donut theme elements are blank", {
   expect_identical(gg$theme$axis.ticks, ggplot2::element_blank())
   expect_identical(gg$theme$panel.background, ggplot2::element_blank())
   expect_identical(gg$theme$panel.grid, ggplot2::element_blank())
+})
+
+# ggplot_donut_percent
+
+ggp <- ggplot_donut_percent(0.6)
+
+test_that("ggplot_donut_percent validates parameters", {
+  expect_error(ggplot_donut_percent(-0.1), "'p'")
+  expect_error(ggplot_donut_percent(1.1), "'p'")
+  expect_error(ggplot_donut_percent(0.6, accuracy = ""), "'accuracy'")
+  expect_error(ggplot_donut_percent(0.6, hsize = -1), "'hsize'")
+  expect_error(ggplot_donut_percent(0.6, hsize = Inf), "'hsize'")
+  expect_error(ggplot_donut_percent(0.6, size = ""), "'size'")
+  expect_error(ggplot_donut_percent(0.6, family = ""), "'family'")
+})
+
+test_that("ggplot_donut_percent disables guide", {
+  expect_identical(ggp$guides$fill, "none")
+})
+
+test_that("ggplot_donut_percent adds geom_text()", {
+  expect_s3_class(ggp[["layers"]][[2]][["geom"]], "GeomText")
+  expect_identical(ggp[["layers"]][[2]][["aes_params"]][["x"]], 0)
+  expect_identical(ggp[["layers"]][[2]][["aes_params"]][["label"]], "60%")
+  expect_identical(ggp[["layers"]][[2]][["aes_params"]][["size"]], 20)
+  expect_identical(ggp[["layers"]][[2]][["aes_params"]][["family"]], "Lato")
+})
+
+test_that("ggplot_donut_percent parameters modify geom_text()", {
+  ggp <- ggplot_donut_percent(0.599, accuracy = 0.1, size = 18, family = "sans")
+  expect_identical(ggp[["layers"]][[2]][["aes_params"]][["label"]], "59.9%")
+  expect_identical(ggp[["layers"]][[2]][["aes_params"]][["size"]], 18)
+  expect_identical(ggp[["layers"]][[2]][["aes_params"]][["family"]], "sans")
 })

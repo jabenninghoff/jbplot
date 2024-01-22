@@ -19,6 +19,7 @@ reference:
     - geom_lm
     - geom_rlm
     - ggplot_donut
+    - ggplot_donut_percent
   - title: jbplot Package
     desc: >
       jbplot package documentation
