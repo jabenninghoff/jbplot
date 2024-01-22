@@ -11,12 +11,12 @@ ggplot_donut(data, group = "group", value = "n", hsize = 2)
 will be converted to one by \code{\link[ggplot2:fortify]{fortify()}}. If not specified,
 must be supplied in each layer added to the plot.}
 
-\item{group}{Name of column to use for the plot colors}
+\item{group}{Name of column to use for the plot colors.}
 
-\item{value}{Name of column to use for the sector size}
+\item{value}{Name of column to use for the sector size.}
 
-\item{hsize}{Size of the donut hole. Defaults to 2, and must be a non-negative value. A value
-of 0 creates a pie chart.}
+\item{hsize}{Size of the donut hole. Defaults to \code{2}, and must be a non-negative value. A value
+of \code{0} creates a pie chart.}
 }
 \description{
 Create a donut plot from a data frame containing groups and corresponding values with

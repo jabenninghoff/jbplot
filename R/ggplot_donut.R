@@ -11,10 +11,10 @@
 #'
 #' @importFrom rlang .data
 #' @inheritParams ggplot2::ggplot
-#' @param group Name of column to use for the plot colors
-#' @param value Name of column to use for the sector size
-#' @param hsize Size of the donut hole. Defaults to 2, and must be a non-negative value. A value
-#'   of 0 creates a pie chart.
+#' @param group Name of column to use for the plot colors.
+#' @param value Name of column to use for the sector size.
+#' @param hsize Size of the donut hole. Defaults to `2`, and must be a non-negative value. A value
+#'   of `0` creates a pie chart.
 #'
 #' @examples
 #' library(dplyr, warn.conflicts = FALSE)
@@ -42,5 +42,52 @@ ggplot_donut <- function(data, group = "group", value = "n", hsize = 2) {
       axis.title = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
       axis.text = ggplot2::element_blank()
+    )
+}
+
+#' Create a Donut Percentage Plot
+#'
+#' Create a donut plot with the text value of the percentage in the center, using [ggplot_donut()].
+#'
+#' `ggplot_donut_percent()` creates a data frame and calls [ggplot_donut()] to create the base plot,
+#'   removes the legend, and adds a [`geom_text()`][ggplot2::geom_text()] centered in the plot.
+#'
+#' The text label is formatted using [scales::label_percent()] with the specified `accuracy`.
+#'
+#' @inheritParams scales::label_percent
+#' @param p Proportion to plot. Must be a value between `0` and `1`.
+#' @param hsize Size of the donut hole. Defaults to `4`, and must be a non-negative value.
+#' @param size Font size to use. Defaults to `20`.
+#' @param family Font family to use. Defaults to `"Lato"`.
+#'
+#' @examples
+#' library(showtext)
+#'
+#' font_add_google("Lato", "Lato")
+#' showtext_auto()
+#' # workaround for https://github.com/yixuan/showtext/issues/51
+#' showtext_opts(dpi = 192)
+#'
+#' ggplot_donut_percent(0.6)
+#' @export
+ggplot_donut_percent <- function(p, accuracy = NULL, hsize = 4, size = 20, family = "Lato") {
+  checkmate::assert_number(p, lower = 0, upper = 1)
+  checkmate::assert_number(accuracy, null.ok = TRUE)
+  checkmate::assert_number(hsize, lower = 0, finite = TRUE)
+  checkmate::assert_number(size)
+  checkmate::assert_string(family, min.chars = 1)
+
+  data <- data.frame(
+    group = c(TRUE, FALSE),
+    n = c(p, 1 - p)
+  )
+
+  ggplot_donut(data, hsize = hsize) +
+    ggplot2::guides(fill = "none") +
+    ggplot2::geom_text(
+      x = 0,
+      label = scales::label_percent(accuracy = accuracy)(p),
+      size = size,
+      family = family
     )
 }

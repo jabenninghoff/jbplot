@@ -2,6 +2,8 @@
 
 * Added `ggplot_donut()`: creates a donut plot from a data frame containing groups and corresponding values with `ggplot2::ggplot()`.
 
+* Added `ggplot_donut_percent()`: creates a donut plot with the text value of the percentage in the center, using `ggplot_donut()`.
+
 # jbplot 1.3.5
 
 * Maintenance updates
