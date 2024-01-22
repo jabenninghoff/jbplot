@@ -4,10 +4,6 @@
 
 * Added `ggplot_donut_percent()`: creates a donut plot with the text value of the percentage in the center, using `ggplot_donut()`.
 
-# jbplot 1.3.5
-
-* Maintenance updates
-
 # jbplot 1.3.4
 
 * Maintenance updates
