@@ -1,3 +1,7 @@
+# jbplot 1.4.0
+
+* Added `ggplot_donut()`: creates a donut plot from a data frame containing groups and corresponding values with `ggplot2::ggplot()`.
+
 # jbplot 1.3.5
 
 * Maintenance updates

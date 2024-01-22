@@ -18,6 +18,7 @@ Suggests:
     covr,
     desc,
     devtools,
+    dplyr,
     DT,
     fs,
     knitr,
