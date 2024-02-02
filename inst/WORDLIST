@@ -12,8 +12,10 @@ eg
 ggplot
 lintr
 macOS
+pkgdown
 renv
 reproducibility
 rescaled
+roxygen
 unscaled
 viridis
