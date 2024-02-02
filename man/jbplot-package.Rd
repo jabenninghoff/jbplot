@@ -6,6 +6,8 @@
 \alias{jbplot-package}
 \title{jbplot: A Personal Collection of ggplot2 Themes}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 My personal collection of ggplot2 themes and styles.
 }
 \seealso{
