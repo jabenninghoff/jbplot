@@ -1,3 +1,7 @@
+# jbplot 1.4.2
+
+* Updated logo
+
 # jbplot 1.4.1
 
 * Add new jbplot hex sticker logo from [stickers](https://jabenninghoff.github.io/stickers/) to `man/figures/logo.png` per [roxygen2](https://github.com/r-lib/roxygen2/blob/db4dd9a4de2ce6817c17441d481cf5d03ef220e2/R/object-defaults.R#L43) and to `README.Rmd` per [pkgdown](https://github.com/r-lib/pkgdown/blob/548a9493b72ff93d3ed8392d4ad30b77d8b15fa5/README.Rmd#L15)
