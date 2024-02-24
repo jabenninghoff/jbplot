@@ -50,6 +50,10 @@ showtext_opts(dpi = 192)
 ggplot(mpg, aes(displ, hwy)) +
   geom_point() +
   geom_rlm(method = "loess") +
-  annotate_quo("label", x = 5.5, y = 30, label = "hwy increases for displ greater than 5.5") +
+  annotate_quo(
+    "label",
+    x = 5.5, y = 30,
+    label = "hwy increases for displ greater than 5.5"
+  ) +
   theme_quo()
 }
