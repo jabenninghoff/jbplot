@@ -60,7 +60,7 @@ test_that("ggplot_donut_percent validates parameters", {
 })
 
 test_that("ggplot_donut_percent disables guide", {
-  expect_identical(ggp$guides$fill, "none")
+  expect_null(ggp$guides$fill)
 })
 
 test_that("ggplot_donut_percent adds geom_text()", {
