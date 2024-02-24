@@ -3,7 +3,11 @@ source("renv/activate.R")
 options(
   warnPartialMatchArgs = TRUE,
   warnPartialMatchAttr = TRUE,
-  warnPartialMatchDollar = TRUE,
+  # disable due to ggplot 2 warning:
+  #   Warning in vp$just: partial match of 'just' to 'justification'
+  # see: https://github.com/tidyverse/ggplot2/issues/5654
+  # TODO: remove when https://github.com/r-lib/gtable/pull/94 is resolved
+  # warnPartialMatchDollar = TRUE,
   styler.cache_root = "styler-perm"
 )
 
