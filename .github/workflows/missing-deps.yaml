@@ -21,7 +21,11 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
       - name: Install dependencies
-        run: renv::install("jabenninghoff/rdev")
+        run: |
+          renv:::renv_download_method()
+          getOption("download.file.method")
+          Sys.setenv(RENV_DOWNLOAD_METHOD = getOption("download.file.method"))
+          renv::install("jabenninghoff/rdev")
         shell: Rscript {0}
 
       - name: Find missing dependencies
