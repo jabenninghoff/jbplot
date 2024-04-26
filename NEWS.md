@@ -1,3 +1,7 @@
+# jbplot 1.4.7
+
+* Updated for R 4.4.0
+
 # jbplot 1.4.6
 
 * Maintenance updates
