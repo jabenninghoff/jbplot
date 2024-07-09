@@ -1,57 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/404.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/TODO.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/articles/jbplot.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/annotate_quo.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/geom_hist_bw.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/geom_lm.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/geom_rlm.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/ggplot_donut.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/ggplot_donut_percent.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/jbplot-package.html</loc>
-  </url>
-  <url>
-    <loc>https://jabenninghoff.github.io/jbplot/reference/theme_quo.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://jabenninghoff.github.io/jbplot/404.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/LICENSE-text.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/LICENSE.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/TODO.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/articles/index.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/articles/jbplot.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/authors.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/index.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/news/index.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/annotate_quo.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/geom_hist_bw.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/geom_lm.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/geom_rlm.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/ggplot_donut.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/ggplot_donut_percent.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/index.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/jbplot-package.html</loc></url>
+<url><loc>https://jabenninghoff.github.io/jbplot/reference/theme_quo.html</loc></url>
 </urlset>
+
