@@ -1,3 +1,7 @@
+# jbplot 1.4.8
+
+* Enabled pkgdown [light switch](https://pkgdown.r-lib.org/articles/customise.html#light-switch)
+
 # jbplot 1.4.7
 
 * Updated for R 4.4.0
