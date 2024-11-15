@@ -6,6 +6,8 @@ Added [Security Differently](https://www.security-differently.com) branded palet
 
 * `pal_differently()`: Security Differently palette constructor
 
+* `scale_color_differently_d()`, `scale_fill_differently_d()`, `scale_color_differently_c()`, `scale_fill_differently_c()`, `scale_color_differently_b()`, `scale_fill_differently_b()`: Security Differently color scales for ggplot2
+
 # jbplot 1.4.8
 
 * Enabled pkgdown [light switch](https://pkgdown.r-lib.org/articles/customise.html#light-switch)

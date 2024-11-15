@@ -38,3 +38,74 @@ test_that("pal_differently direction reverses vector order", {
     pal_differently(palette = "plot", direction = -1)(6), rev(unname(differently_palettes$plot))
   )
 })
+
+# scale_color_differently_d
+
+df <- data.frame(x = 1, y = 1, z = "a", c = 0.5, stringsAsFactors = FALSE)
+
+test_that("scale_color_differently_d changes point color", {
+  p1 <- ggplot2::ggplot(df, ggplot2::aes(x, y, color = z)) +
+    ggplot2::geom_point()
+  p2 <- p1 + scale_color_differently_d()
+
+  expect_false(ggplot2::layer_data(p1)$colour == ggplot2::layer_data(p2)$colour)
+  expect_identical(ggplot2::layer_data(p2)$colour, differently_palettes$plot[[1]])
+})
+
+# scale_fill_differently_d
+
+test_that("scale_fill_differently_d changes fill color", {
+  p1 <- ggplot2::ggplot(df, ggplot2::aes(x, fill = z)) +
+    ggplot2::geom_histogram(bins = 1)
+  p2 <- p1 + scale_fill_differently_d()
+
+  expect_false(ggplot2::layer_data(p1)$fill == ggplot2::layer_data(p2)$fill)
+  expect_identical(ggplot2::layer_data(p2)$fill, differently_palettes$plot[[1]])
+})
+
+# scale_color_differently_c
+
+test_that("scale_color_differently_c changes point color", {
+  p1 <- ggplot2::ggplot(df, ggplot2::aes(x, y, color = c)) +
+    ggplot2::geom_point()
+  p2 <- p1 + scale_color_differently_c()
+
+  expect_false(ggplot2::layer_data(p1)$colour == ggplot2::layer_data(p2)$colour)
+  expect_identical(ggplot2::layer_data(p2)$colour, "#8D6C7D")
+})
+
+# scale_fill_differently_c
+
+test_that("scale_fill_differently_c changes fill color", {
+  p1 <- ggplot2::ggplot(df, ggplot2::aes(x, fill = c)) +
+    ggplot2::geom_histogram(bins = 1)
+  p2 <- p1 + scale_fill_differently_c()
+
+  expect_false(ggplot2::layer_data(p1)$fill == ggplot2::layer_data(p2)$fill)
+  expect_identical(ggplot2::layer_data(p2)$fill, "#8D6C7D")
+})
+
+# scale_color_differently_b
+
+test_that("scale_color_differently_b changes point color", {
+  df2 <- data.frame(x = 1:2, y = 1:2, z = c(0.5, 1), stringsAsFactors = FALSE)
+
+  p1 <- ggplot2::ggplot(df2, ggplot2::aes(x, y, color = z)) +
+    ggplot2::geom_count() +
+    ggplot2::scale_x_binned()
+  p2 <- p1 + scale_color_differently_b()
+
+  expect_false(all(ggplot2::layer_data(p1)$colour == ggplot2::layer_data(p2)$colour))
+  expect_identical(ggplot2::layer_data(p2)$colour, unname(differently_palettes$plot[c(1, 5)]))
+})
+
+# scale_fill_differently_b
+
+test_that("scale_fill_differently_b changes fill color", {
+  p1 <- ggplot2::ggplot(df, ggplot2::aes(x, y, fill = c)) +
+    ggplot2::geom_tile()
+  p2 <- p1 + scale_fill_differently_b()
+
+  expect_false(ggplot2::layer_data(p1)$fill == ggplot2::layer_data(p2)$fill)
+  expect_identical(ggplot2::layer_data(p2)$fill, differently_palettes$plot[[1]])
+})
