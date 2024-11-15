@@ -16,8 +16,6 @@ coverage](https://codecov.io/gh/jabenninghoff/jbplot/branch/main/graph/badge.svg
 **A Personal Collection of ggplot2 Themes:** My personal collection of
 ggplot2 themes and styles.
 
-Feel free to use and/or fork this project!
-
 ## Installation
 
 You can install the development version of jbplot from
