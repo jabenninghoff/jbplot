@@ -1,3 +1,9 @@
+# jbplot 1.5.0
+
+Added [Security Differently](https://www.security-differently.com) branded palettes and color functions:
+
+* `sd_palettes`: all Security Differently palettes
+
 # jbplot 1.4.8
 
 * Enabled pkgdown [light switch](https://pkgdown.r-lib.org/articles/customise.html#light-switch)

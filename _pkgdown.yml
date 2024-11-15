@@ -9,6 +9,11 @@ reference:
       Customized ggplot2 themes
     contents:
     - theme_quo
+  - title: ggplot2 Colors
+    desc: >
+      Customized ggplot2 colors
+    contents:
+    - sd_palettes
   - title: ggplot2 Functions
     desc: >
       ggplot2 convenience and custom functions
