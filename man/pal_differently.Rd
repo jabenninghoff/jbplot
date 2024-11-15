@@ -5,12 +5,12 @@
 \alias{differently_pal}
 \title{Security Differently palette}
 \usage{
-pal_differently(name = "plot", direction = 1)
+pal_differently(palette = "plot", direction = 1)
 
-differently_pal(name = "plot", direction = 1)
+differently_pal(palette = "plot", direction = 1)
 }
 \arguments{
-\item{name}{Name of palette, one of: \code{primary}, \code{status}, or \code{plot} (the default).}
+\item{palette}{Palette to use, one of: \code{primary}, \code{status}, or \code{plot} (the default).}
 
 \item{direction}{Sets the order of colors in the scale. If 1, (the default) colors are as output
 by \link{differently_palettes}. If -1, the order of colors is reversed.}

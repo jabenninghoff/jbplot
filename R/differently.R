@@ -40,7 +40,7 @@ differently_palettes <- list(
 #'
 #' Construct Security Differently branded color palettes.
 #'
-#' @param name Name of palette, one of: `primary`, `status`, or `plot` (the default).
+#' @param palette Palette to use, one of: `primary`, `status`, or `plot` (the default).
 #' @param direction Sets the order of colors in the scale. If 1, (the default) colors are as output
 #'   by [differently_palettes]. If -1, the order of colors is reversed.
 #'
@@ -54,11 +54,11 @@ differently_palettes <- list(
 #' show_col(pal_differently("status")(3))
 #'
 #' @export
-pal_differently <- function(name = "plot", direction = 1) {
-  checkmate::assert_choice(name, names(differently_palettes))
+pal_differently <- function(palette = "plot", direction = 1) {
+  checkmate::assert_choice(palette, names(differently_palettes))
   checkmate::assert_choice(direction, c(-1, 1))
   function(n) {
-    pal <- unname(differently_palettes[[name]])
+    pal <- unname(differently_palettes[[palette]])
     if (n == 0) {
       stop("Must request at least one color from a sd palette.")
     }
