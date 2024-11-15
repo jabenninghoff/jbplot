@@ -1,6 +1,13 @@
+# inspired by:
+# - https://github.com/karthik/wesanderson/blob/master/R/colors.R
+# - https://github.com/r-lib/scales/blob/main/R/pal-brewer.R
+# - https://github.com/r-lib/scales/blob/main/R/pal-viridis.R
+# - https://github.com/tidyverse/ggplot2/blob/main/R/scale-viridis.R
+
 #' Security Differently Palettes
 #'
-#' Security Differently branded color palettes.
+#' Security Differently branded color palettes. Use [pal_sd()] to construct palettes of desired
+#'   length.
 #'
 #' Primary color palette (`primary`):
 #'
@@ -28,3 +35,35 @@ sd_palettes <- list(
     purple = "#8942C4", red = "#C83B31"
   )
 )
+
+#' Security Differently palette
+#'
+#' Construct Security Differently branded color palettes.
+#'
+#' @param name Name of palette, one of: `primary`, `status`, or `plot` (the default).
+#'
+#' @return A vector of hex code colors.
+#' @export
+#'
+#' @examples
+#' library(scales)
+#' show_col(pal_sd()(6))
+#' show_col(pal_sd("primary")(6))
+#' show_col(pal_sd("status")(3))
+pal_sd <- function(name = "plot") {
+  checkmate::assert_choice(name, names(sd_palettes))
+  function(n) {
+    pal <- unname(sd_palettes[[name]])
+    if (n == 0) {
+      stop("Must request at least one color from a sd palette.")
+    }
+    if (n > length(pal)) {
+      stop("Number of requested colors greater than available colors in palette.")
+    }
+    pal[1:n]
+  }
+}
+
+#' @export
+#' @rdname pal_sd
+sd_pal <- pal_sd
