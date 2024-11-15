@@ -41,6 +41,8 @@ differently_palettes <- list(
 #' Construct Security Differently branded color palettes.
 #'
 #' @param name Name of palette, one of: `primary`, `status`, or `plot` (the default).
+#' @param direction Sets the order of colors in the scale. If 1, (the default) colors are as output
+#'   by [differently_palettes]. If -1, the order of colors is reversed.
 #'
 #' @return A vector of hex code colors.
 #' @export
@@ -50,8 +52,10 @@ differently_palettes <- list(
 #' show_col(pal_differently()(6))
 #' show_col(pal_differently("primary")(6))
 #' show_col(pal_differently("status")(3))
-pal_differently <- function(name = "plot") {
+#' show_col(pal_differently("primary", direction = -1)(6))
+pal_differently <- function(name = "plot", direction = 1) {
   checkmate::assert_choice(name, names(differently_palettes))
+  checkmate::assert_choice(direction, c(-1, 1))
   function(n) {
     pal <- unname(differently_palettes[[name]])
     if (n == 0) {
@@ -60,7 +64,13 @@ pal_differently <- function(name = "plot") {
     if (n > length(pal)) {
       stop("Number of requested colors greater than available colors in palette.")
     }
-    pal[1:n]
+    pal <- pal[1:n]
+
+    if (direction == -1) {
+      pal <- rev(pal)
+    }
+
+    pal
   }
 }
 
