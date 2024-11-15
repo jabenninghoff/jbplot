@@ -45,14 +45,15 @@ differently_palettes <- list(
 #'   by [differently_palettes]. If -1, the order of colors is reversed.
 #'
 #' @return A vector of hex code colors.
-#' @export
 #'
 #' @examples
 #' library(scales)
 #' show_col(pal_differently()(6))
 #' show_col(pal_differently("primary")(6))
-#' show_col(pal_differently("status")(3))
 #' show_col(pal_differently("primary", direction = -1)(6))
+#' show_col(pal_differently("status")(3))
+#'
+#' @export
 pal_differently <- function(name = "plot", direction = 1) {
   checkmate::assert_choice(name, names(differently_palettes))
   checkmate::assert_choice(direction, c(-1, 1))

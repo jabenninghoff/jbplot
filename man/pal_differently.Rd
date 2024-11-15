@@ -25,6 +25,7 @@ Construct Security Differently branded color palettes.
 library(scales)
 show_col(pal_differently()(6))
 show_col(pal_differently("primary")(6))
-show_col(pal_differently("status")(3))
 show_col(pal_differently("primary", direction = -1)(6))
+show_col(pal_differently("status")(3))
+
 }
