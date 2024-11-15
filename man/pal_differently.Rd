@@ -5,12 +5,15 @@
 \alias{differently_pal}
 \title{Security Differently palette}
 \usage{
-pal_differently(name = "plot")
+pal_differently(name = "plot", direction = 1)
 
-differently_pal(name = "plot")
+differently_pal(name = "plot", direction = 1)
 }
 \arguments{
 \item{name}{Name of palette, one of: \code{primary}, \code{status}, or \code{plot} (the default).}
+
+\item{direction}{Sets the order of colors in the scale. If 1, (the default) colors are as output
+by \link{differently_palettes}. If -1, the order of colors is reversed.}
 }
 \value{
 A vector of hex code colors.
@@ -23,4 +26,5 @@ library(scales)
 show_col(pal_differently()(6))
 show_col(pal_differently("primary")(6))
 show_col(pal_differently("status")(3))
+show_col(pal_differently("primary", direction = -1)(6))
 }
