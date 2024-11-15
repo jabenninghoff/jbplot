@@ -2,9 +2,9 @@
 
 Added [Security Differently](https://www.security-differently.com) branded palettes and color functions:
 
-* `sd_palettes`: all Security Differently palettes
+* `differently_palettes`: all Security Differently palettes
 
-* `pal_sd()`: Security Differently palette constructor
+* `pal_differently()`: Security Differently palette constructor
 
 # jbplot 1.4.8
 
