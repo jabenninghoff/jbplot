@@ -6,8 +6,8 @@
 
 #' Security Differently Palettes
 #'
-#' Security Differently branded color palettes. Use [pal_sd()] to construct palettes of desired
-#'   length.
+#' Security Differently branded color palettes. Use [pal_differently()] to construct palettes of
+#'   desired length.
 #'
 #' Primary color palette (`primary`):
 #'
@@ -24,7 +24,7 @@
 #' @format A list of 3 named vectors of colors.
 #'
 #' @export
-sd_palettes <- list(
+differently_palettes <- list(
   primary = c(
     blue = "#0D629C", orange = "#FC7A00", darkgray = "#575757", lightblue = "#3498DB",
     lightorange = "#FFBC50", lightgray = "#ECF0F1"
@@ -47,13 +47,13 @@ sd_palettes <- list(
 #'
 #' @examples
 #' library(scales)
-#' show_col(pal_sd()(6))
-#' show_col(pal_sd("primary")(6))
-#' show_col(pal_sd("status")(3))
-pal_sd <- function(name = "plot") {
-  checkmate::assert_choice(name, names(sd_palettes))
+#' show_col(pal_differently()(6))
+#' show_col(pal_differently("primary")(6))
+#' show_col(pal_differently("status")(3))
+pal_differently <- function(name = "plot") {
+  checkmate::assert_choice(name, names(differently_palettes))
   function(n) {
-    pal <- unname(sd_palettes[[name]])
+    pal <- unname(differently_palettes[[name]])
     if (n == 0) {
       stop("Must request at least one color from a sd palette.")
     }
@@ -65,5 +65,5 @@ pal_sd <- function(name = "plot") {
 }
 
 #' @export
-#' @rdname pal_sd
-sd_pal <- pal_sd
+#' @rdname pal_differently
+differently_pal <- pal_differently

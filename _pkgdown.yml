@@ -13,8 +13,8 @@ reference:
     desc: >
       Customized ggplot2 colors
     contents:
-    - sd_palettes
-    - pal_sd
+    - differently_palettes
+    - pal_differently
   - title: ggplot2 Functions
     desc: >
       ggplot2 convenience and custom functions
