@@ -4,6 +4,8 @@ Added [Security Differently](https://www.security-differently.com) branded palet
 
 * `sd_palettes`: all Security Differently palettes
 
+* `pal_sd()`: Security Differently palette constructor
+
 # jbplot 1.4.8
 
 * Enabled pkgdown [light switch](https://pkgdown.r-lib.org/articles/customise.html#light-switch)

@@ -11,7 +11,8 @@ A list of 3 named vectors of colors.
 sd_palettes
 }
 \description{
-Security Differently branded color palettes.
+Security Differently branded color palettes. Use \code{\link[=pal_sd]{pal_sd()}} to construct palettes of desired
+length.
 }
 \details{
 Primary color palette (\code{primary}):
