@@ -1,3 +1,7 @@
+# jbplot 1.5.1
+
+* Maintenance updates
+
 # jbplot 1.5.0
 
 Added [Security Differently](https://www.security-differently.com) branded palettes and color functions:
