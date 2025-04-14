@@ -60,10 +60,10 @@ pal_differently <- function(palette = "plot", direction = 1) {
   function(n) {
     pal <- unname(differently_palettes[[palette]])
     if (n == 0) {
-      stop("Must request at least one color from a sd palette.")
+      stop("Must request at least one color from a sd palette.", call. = FALSE)
     }
     if (n > length(pal)) {
-      stop("Number of requested colors greater than available colors in palette.")
+      stop("Number of requested colors greater than available colors in palette.", call. = FALSE)
     }
     pal <- pal[1:n]
 

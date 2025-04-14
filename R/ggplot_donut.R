@@ -84,12 +84,12 @@ ggplot_donut_percent <- function(p, accuracy = NULL, hsize = 4, size = 20, famil
   checkmate::assert_number(size)
   checkmate::assert_string(family, min.chars = 1)
 
-  data <- data.frame(
+  donut_data <- data.frame(
     group = c(TRUE, FALSE),
     n = c(p, 1 - p)
   )
 
-  ggplot_donut(data, hsize = hsize) +
+  ggplot_donut(donut_data, hsize = hsize) +
     ggplot2::guides(fill = "none") +
     ggplot2::geom_text(
       x = 0,
