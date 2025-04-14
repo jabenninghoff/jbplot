@@ -1,9 +1,9 @@
-pandoc: 3.6.2
+pandoc: 3.6.4
 pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   jbplot: jbplot.html
-last_built: 2025-01-30T18:15Z
+last_built: 2025-04-14T17:40Z
 urls:
   reference: https://jabenninghoff.github.io/jbplot/reference
   article: https://jabenninghoff.github.io/jbplot/articles
