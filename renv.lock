@@ -1952,7 +1952,7 @@
     },
     "httpuv": {
       "Package": "httpuv",
-      "Version": "1.6.15",
+      "Version": "1.6.16",
       "Source": "Repository",
       "Type": "Package",
       "Title": "HTTP and WebSocket Server Library",
@@ -1974,6 +1974,7 @@
       "Suggests": [
         "callr",
         "curl",
+        "jsonlite",
         "testthat",
         "websocket"
       ],
@@ -1982,7 +1983,7 @@
         "Rcpp"
       ],
       "Encoding": "UTF-8",
-      "RoxygenNote": "7.3.1",
+      "RoxygenNote": "7.3.2",
       "SystemRequirements": "GNU make, zlib",
       "Collate": "'RcppExports.R' 'httpuv.R' 'random_port.R' 'server.R' 'staticServer.R' 'static_paths.R' 'utils.R'",
       "NeedsCompilation": "yes",
@@ -3454,7 +3455,7 @@
     },
     "rdev": {
       "Package": "rdev",
-      "Version": "1.12.1",
+      "Version": "1.12.2",
       "Source": "GitHub",
       "Title": "R Development Tools",
       "Authors@R": "person(\"John\", \"Benninghoff\", , \"jbenninghoff@mac.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6230-4742\"))",
@@ -3520,11 +3521,11 @@
       "Author": "John Benninghoff [aut, cre] (ORCID: <https://orcid.org/0000-0002-6230-4742>)",
       "Maintainer": "John Benninghoff <jbenninghoff@mac.com>",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
       "RemoteUsername": "jabenninghoff",
       "RemoteRepo": "rdev",
       "RemoteRef": "main",
-      "RemoteSha": "c8752242bc696ffdb7f1d93a90ef0e8b8f3ea2e4"
+      "RemoteSha": "a31ed387116fd6fb2122e2ba2ebd2314f796926d",
+      "RemoteHost": "api.github.com"
     },
     "remotes": {
       "Package": "remotes",
@@ -4629,7 +4630,7 @@
     },
     "tinytex": {
       "Package": "tinytex",
-      "Version": "0.56",
+      "Version": "0.57",
       "Source": "Repository",
       "Type": "Package",
       "Title": "Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents",
