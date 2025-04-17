@@ -20,9 +20,9 @@
 #' library(dplyr, warn.conflicts = FALSE)
 #' library(ggplot2)
 #'
-#' mtcars |>
-#'   count(cyl) |>
-#'   mutate(cyl = as.factor(cyl)) |>
+#' mtcars %>%
+#'   count(cyl) %>%
+#'   mutate(cyl = as.factor(cyl)) %>%
 #'   ggplot_donut(group = "cyl")
 #' @export
 ggplot_donut <- function(data, group = "group", value = "n", hsize = 2) {
