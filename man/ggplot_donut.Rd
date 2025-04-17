@@ -33,8 +33,8 @@ Some default plot elements are disabled using \code{\link[ggplot2:theme]{ggplot2
 library(dplyr, warn.conflicts = FALSE)
 library(ggplot2)
 
-mtcars |>
-  count(cyl) |>
-  mutate(cyl = as.factor(cyl)) |>
+mtcars \%>\%
+  count(cyl) \%>\%
+  mutate(cyl = as.factor(cyl)) \%>\%
   ggplot_donut(group = "cyl")
 }
