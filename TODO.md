@@ -4,3 +4,4 @@
 - [x] Add tests, test coverage
 - [x] Add macro [functions](https://ggplot2-book.org/programming.html) for common plot elements like
       `geom_rlm`
+- [ ] Update package [accessibility](https://pkgdown.r-lib.org/articles/accessibility.html)
