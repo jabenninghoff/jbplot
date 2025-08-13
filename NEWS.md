@@ -1,3 +1,7 @@
+# jbplot 1.5.5
+
+* Minor updates
+
 # jbplot 1.5.4
 
 * Corrected GitHub language stats
