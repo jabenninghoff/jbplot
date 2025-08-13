@@ -5,7 +5,6 @@ Donut
 Lato
 ORCID
 README
-Viridis
 behaviour
 colour
 colours
@@ -16,9 +15,5 @@ ggplot
 lintr
 pkgdown
 renv
-reproducibility
-rescaled
 roxygen
 unmapped
-unscaled
-viridis
