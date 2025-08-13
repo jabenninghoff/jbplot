@@ -3384,7 +3384,7 @@
     },
     "rdev": {
       "Package": "rdev",
-      "Version": "1.13.0",
+      "Version": "1.14.0",
       "Source": "GitHub",
       "Title": "R Development Tools",
       "Authors@R": "person(\"John\", \"Benninghoff\", , \"jbenninghoff@mac.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6230-4742\"))",
@@ -3453,7 +3453,7 @@
       "RemoteUsername": "jabenninghoff",
       "RemoteRepo": "rdev",
       "RemoteRef": "main",
-      "RemoteSha": "898cc6b643b8b1be092a7349a115c9162aad9766",
+      "RemoteSha": "14236f40f57acd74cb8346a0ac326a4378d03766",
       "RemoteHost": "api.github.com"
     },
     "remotes": {
