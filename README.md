@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/jabenninghoff/jbplot/workflows/R-CMD-check/badge.svg)](https://github.com/jabenninghoff/jbplot/actions)
 [![lint](https://github.com/jabenninghoff/jbplot/workflows/lint/badge.svg)](https://github.com/jabenninghoff/jbplot/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/jabenninghoff/jbplot/branch/main/graph/badge.svg)](https://app.codecov.io/gh/jabenninghoff/jbplot?branch=main)
+coverage](https://codecov.io/gh/jabenninghoff/jbplot/graph/badge.svg)](https://app.codecov.io/gh/jabenninghoff/jbplot)
 <!-- badges: end -->
 
 ## Overview
