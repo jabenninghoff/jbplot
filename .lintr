@@ -19,9 +19,9 @@ linters: linters_with_tags(
 exclusions: list(
     # showtext is activated by fig.showtext = TRUE
     "vignettes/jbplot.Rmd" = list(
-      implicit_assignment_linter = c(82, 84, 86),
+      implicit_assignment_linter = c(97, 99, 101),
       # https://github.com/r-lib/lintr/issues/2007
-      indentation_linter = c(83, 85, 87),
+      indentation_linter = c(98, 100, 102),
       unused_import_linter = 24
     )
   )

@@ -2,6 +2,8 @@
 
 * Updated for ggplot2 4.0
 
+* Added alternative (alt) text to plots in README and vignettes
+
 * First upkeep using `rdev::use_upkeep_issue()`
 
 # jbplot 1.5.5

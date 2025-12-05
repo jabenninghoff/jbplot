@@ -61,7 +61,7 @@ ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   scale_color_viridis_d()
 ```
 
-<img src="man/figures/README-mtcars-1.png" width="100%" />
+<img src="man/figures/README-mtcars-1.png" alt="Scatterplot of weight versus miles per gallon for 32 cars using the quo theme and viridis colors. The points are grouped and colored by the number of cylinders." width="100%" />
 
 For more information, see the “jbplot ggplot2 style” get started
 [vignette](https://jabenninghoff.github.io/jbplot/articles/jbplot.html).

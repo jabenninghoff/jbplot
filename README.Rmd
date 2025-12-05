@@ -57,6 +57,8 @@ jbplot allows creation of styled plots, such as this `mtcars` example, adapted f
 #| label: mtcars
 #| message: false
 #| warning: false
+#| fig-alt: "Scatterplot of weight versus miles per gallon for 32 cars using the quo theme and
+#|   viridis colors. The points are grouped and colored by the number of cylinders."
 library(ggplot2)
 library(jbplot)
 
