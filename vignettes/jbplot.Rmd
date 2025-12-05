@@ -37,6 +37,11 @@ The quo theme applied to the venerable `mtcars` dataset. Example adapted from
 ```{r}
 #| label: p1
 #| fig-showtext: true
+#| fig-alt:
+#|   - "Scatterplot of weight versus miles per gallon for 32 cars using the default ggplot2 theme.
+#|     The points are grouped and colored by the number of cylinders."
+#|   - "Scatterplot of weight versus miles per gallon for 32 cars using the quo theme.
+#|     The points are grouped and colored by the number of cylinders."
 p1 <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   geom_point() +
   labs(
@@ -58,6 +63,8 @@ The viridis color scheme can be added manually using `ggplot2::scale_color_virid
 ```{r}
 #| label: p1_viridis
 #| fig-showtext: true
+#| fig-alt: "Scatterplot of weight versus miles per gallon for 32 cars using the quo theme and
+#|   viridis colors. The points are grouped and colored by the number of cylinders."
 p1 +
   theme_quo() +
   scale_color_viridis_d()
@@ -77,6 +84,14 @@ Sample plots using the default theme and color scales:
 
 ```{r}
 #| label: txsamp
+#| fig-alt:
+#|   - "Scatterplot of number of sales versus median sale price for five cities in Texas. The points
+#|     are grouped and colored by city. Styled with the default ggplot2 theme."
+#|   - "Histogram of median sales price for five cities in Texas, with different colored bars for
+#|     each city. Styled with the default ggplot2 theme."
+#|   - "A 2D density estimate of the waiting time between eruptions and the duration of the eruption
+#|     for the Old Faithful geyser in Yellowstone National Park. Styled with the default ggplot2
+#|     theme."
 txsamp <- subset(txhousing, city %in% c("Houston", "Fort Worth", "San Antonio", "Dallas", "Austin"))
 
 (d <- ggplot(data = txsamp, aes(x = sales, y = median)) +
@@ -84,7 +99,7 @@ txsamp <- subset(txhousing, city %in% c("Houston", "Fort Worth", "San Antonio", 
 (p <- ggplot(txsamp, aes(x = median, fill = city)) +
   geom_histogram(position = "dodge", binwidth = 15000))
 (v <- ggplot(faithfuld) +
-  geom_tile(aes(waiting, eruptions, fill = density)))
+  geom_raster(aes(waiting, eruptions, fill = density)))
 ```
 
 The same plots after applying viridis and quo:
@@ -92,6 +107,14 @@ The same plots after applying viridis and quo:
 ```{r}
 #| label: viridis_quo
 #| fig-showtext: true
+#| fig-alt:
+#|   - "Scatterplot of number of sales versus median sale price for five cities in Texas. The points
+#|     are grouped and colored by city. Styled with the quo theme and viridis colors."
+#|   - "Histogram of median sales price for five cities in Texas, with different colored bars for
+#|     each city. Styled with the quo theme and viridis colors."
+#|   - "A 2D density estimate of the waiting time between eruptions and the duration of the eruption
+#|     for the Old Faithful geyser in Yellowstone National Park. Styled with the quo theme and
+#|     viridis colors."
 d + scale_color_viridis_d() + theme_quo()
 p + scale_fill_viridis_d() + theme_quo()
 v + scale_fill_viridis_c() + theme_quo()
@@ -104,6 +127,15 @@ Grid lines can be selectively disabled using `theme_quo()`:
 ```{r}
 #| label: panel.grid
 #| fig-showtext: true
+#| fig-alt:
+#|   - "Scatterplot of number of sales versus median sale price for five cities in Texas. The points
+#|     are grouped and colored by city. Styled with the quo theme and viridis colors, with only
+#|     major grid lines."
+#|   - "Histogram of median sales price for five cities in Texas, with different colored bars for
+#|     each city. Styled with the quo theme and viridis colors, using only horizontal grid lines."
+#|   - "A 2D density estimate of the waiting time between eruptions and the duration of the eruption
+#|     for the Old Faithful geyser in Yellowstone National Park. Styled with the quo theme and
+#|     viridis colors, with no grid lines."
 d + scale_color_viridis_d() + theme_quo(minor = FALSE)
 p + scale_fill_viridis_d() + theme_quo(x = FALSE)
 v + scale_fill_viridis_c() + theme_quo(major = FALSE, minor = FALSE)

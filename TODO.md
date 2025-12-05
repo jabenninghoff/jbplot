@@ -6,6 +6,6 @@
       `geom_rlm`
 - [x] Review and update functions for new
       [ggplot2 4.0.0](https://tidyverse.org/blog/2025/09/ggplot2-4-0-0/) features
-- [ ] Update package [accessibility](https://pkgdown.r-lib.org/articles/accessibility.html)
+- [x] Update package [accessibility](https://pkgdown.r-lib.org/articles/accessibility.html)
 - [ ] Add theme that [embeds](https://tidyverse.org/blog/2025/09/ggplot2-4-0-0/#scales-and-palettes)
       the Security Differently Palettes (`differently_palettes`)
