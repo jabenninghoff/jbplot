@@ -23,12 +23,11 @@ test_that("ggplot_donut uses geom_col()", {
   expect_s3_class(gg[["layers"]][[1]][["geom"]], "GeomCol")
 })
 
-test_that("ggplot_donut uses polar coordinates", {
-  expect_s3_class(gg$coordinates, "CoordPolar")
+test_that("ggplot_donut uses radial coordinates", {
+  expect_s3_class(gg$coordinates, "CoordRadial")
   expect_identical(gg$coordinates$r, "x")
   expect_identical(gg$coordinates$theta, "y")
-  expect_identical(gg$coordinates$start, 0)
-  expect_identical(gg$coordinates$direction, 1)
+  expect_identical(gg$coordinates$arc, c(0, 2 * pi))
 })
 
 test_that("ggplot_donut limits are set with hsize", {

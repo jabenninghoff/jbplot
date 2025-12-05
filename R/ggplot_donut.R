@@ -3,9 +3,10 @@
 #' Create a donut plot from a data frame containing groups and corresponding values with
 #'   [ggplot2::ggplot()].
 #'
-#' Implemented using [ggplot2::geom_col()], [ggplot2::coord_polar()], and [ggplot2::xlim()], adapted
-#'   from guides in [The R Graph Gallery](https://r-graph-gallery.com/128-ring-or-donut-plot.html)
-#'   and [R CHARTS](https://r-charts.com/part-whole/donut-chart-ggplot2/).
+#' Implemented using [ggplot2::geom_col()], [ggplot2::coord_radial()], and [ggplot2::xlim()],
+#'   adapted from guides in
+#'   [The R Graph Gallery](https://r-graph-gallery.com/128-ring-or-donut-plot.html) and
+#'   [R CHARTS](https://r-charts.com/part-whole/donut-chart-ggplot2/).
 #'
 #' Some default plot elements are disabled using [ggplot2::theme()] and [ggplot2::element_blank()].
 #'
@@ -41,7 +42,7 @@ ggplot_donut <- function(data, group = "group", value = "n", hsize = 2) {
   hsize <- 0.45 + hsize
   ggplot2::ggplot(data, ggplot2::aes(x = hsize, y = .data[[value]], fill = .data[[group]])) +
     ggplot2::geom_col() +
-    ggplot2::coord_polar(theta = "y") +
+    ggplot2::coord_radial(theta = "y", expand = FALSE) +
     ggplot2::xlim(c(0, hsize + 0.5)) +
     ggplot2::theme_sub_panel(
       background = ggplot2::element_blank(),
