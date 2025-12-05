@@ -4,7 +4,9 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r setup, include = FALSE}
+```{r}
+#| label: setup
+#| include: false
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -51,7 +53,10 @@ renv::install("jabenninghoff/jbplot")
 
 jbplot allows creation of styled plots, such as this `mtcars` example, adapted from `ggplot2::theme_minimal()`:
 
-```{r mtcars, message = FALSE, warning = FALSE}
+```{r}
+#| label: mtcars
+#| message: false
+#| warning: false
 library(ggplot2)
 library(jbplot)
 

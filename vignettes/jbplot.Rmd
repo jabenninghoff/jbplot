@@ -7,14 +7,18 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
+```{r}
+#| include: false
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-```{r setup, message = FALSE, warning = FALSE}
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
 library(jbplot)
 library(ggplot2)
 library(showtext)
@@ -30,7 +34,9 @@ The included theme, quo, can be added to individual plots using `theme_quo()`.
 The quo theme applied to the venerable `mtcars` dataset. Example adapted from
 `ggplot2::theme_minimal()`:
 
-```{r p1, fig.showtext = TRUE}
+```{r}
+#| label: p1
+#| fig-showtext: true
 p1 <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   geom_point() +
   labs(
@@ -49,7 +55,9 @@ p1 + theme_quo()
 
 The viridis color scheme can be added manually using `ggplot2::scale_color_viridis_d()`:
 
-```{r p1_viridis, fig.showtext = TRUE}
+```{r}
+#| label: p1_viridis
+#| fig-showtext: true
 p1 +
   theme_quo() +
   scale_color_viridis_d()
@@ -67,7 +75,8 @@ Quo is designed to be paired with the viridis color scale, added by calling one 
 
 Sample plots using the default theme and color scales:
 
-```{r txsamp}
+```{r}
+#| label: txsamp
 txsamp <- subset(txhousing, city %in% c("Houston", "Fort Worth", "San Antonio", "Dallas", "Austin"))
 
 (d <- ggplot(data = txsamp, aes(x = sales, y = median)) +
@@ -80,7 +89,9 @@ txsamp <- subset(txhousing, city %in% c("Houston", "Fort Worth", "San Antonio", 
 
 The same plots after applying viridis and quo:
 
-```{r viridis_quo, fig.showtext = TRUE}
+```{r}
+#| label: viridis_quo
+#| fig-showtext: true
 d + scale_color_viridis_d() + theme_quo()
 p + scale_fill_viridis_d() + theme_quo()
 v + scale_fill_viridis_c() + theme_quo()
@@ -90,7 +101,9 @@ v + scale_fill_viridis_c() + theme_quo()
 
 Grid lines can be selectively disabled using `theme_quo()`:
 
-```{r panel.grid, fig.showtext = TRUE}
+```{r}
+#| label: panel.grid
+#| fig-showtext: true
 d + scale_color_viridis_d() + theme_quo(minor = FALSE)
 p + scale_fill_viridis_d() + theme_quo(x = FALSE)
 v + scale_fill_viridis_c() + theme_quo(major = FALSE, minor = FALSE)
