@@ -61,18 +61,18 @@ theme_quo <- function(major = TRUE,
   checkmate::assert_flag(y)
 
   gg <- ggplot2::theme_minimal(base_family = "Lato") +
-    ggplot2::theme(
-      plot.title = ggplot2::element_text(face = "bold"),
-      plot.subtitle = ggplot2::element_text(face = "bold"),
-      plot.caption = ggplot2::element_text(hjust = 0)
+    ggplot2::theme_sub_plot(
+      title = ggplot2::element_text(face = "bold"),
+      subtitle = ggplot2::element_text(face = "bold"),
+      caption = ggplot2::element_text(hjust = 0)
     )
 
-  if (!major) gg <- gg + ggplot2::theme(panel.grid.major = ggplot2::element_blank())
-  if (!major.x || !x) gg <- gg + ggplot2::theme(panel.grid.major.x = ggplot2::element_blank())
-  if (!major.y || !y) gg <- gg + ggplot2::theme(panel.grid.major.y = ggplot2::element_blank())
-  if (!minor) gg <- gg + ggplot2::theme(panel.grid.minor = ggplot2::element_blank())
-  if (!minor.x || !x) gg <- gg + ggplot2::theme(panel.grid.minor.x = ggplot2::element_blank())
-  if (!minor.y || !y) gg <- gg + ggplot2::theme(panel.grid.minor.y = ggplot2::element_blank())
+  if (!major) gg <- gg + ggplot2::theme_sub_panel(grid.major = ggplot2::element_blank())
+  if (!major.x || !x) gg <- gg + ggplot2::theme_sub_panel(grid.major.x = ggplot2::element_blank())
+  if (!major.y || !y) gg <- gg + ggplot2::theme_sub_panel(grid.major.y = ggplot2::element_blank())
+  if (!minor) gg <- gg + ggplot2::theme_sub_panel(grid.minor = ggplot2::element_blank())
+  if (!minor.x || !x) gg <- gg + ggplot2::theme_sub_panel(grid.minor.x = ggplot2::element_blank())
+  if (!minor.y || !y) gg <- gg + ggplot2::theme_sub_panel(grid.minor.y = ggplot2::element_blank())
 
   gg
 }

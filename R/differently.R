@@ -127,6 +127,7 @@ differently_pal <- pal_differently
 #' v + scale_fill_differently_b()
 #'
 #' @export
+# all scale_ functions adapted from https://github.com/tidyverse/ggplot2/blob/main/R/scale-viridis.R
 scale_color_differently_d <- function(name = ggplot2::waiver(), ..., palette = "plot",
                                       direction = 1, aesthetics = "color") {
   ggplot2::discrete_scale(
@@ -183,6 +184,7 @@ scale_fill_differently_c <- function(name = ggplot2::waiver(), ..., palette = "p
 
 # from https://github.com/tidyverse/ggplot2/blob/main/R/utilities.R
 pal_binned <- function(palette) {
+  force(palette)
   function(x) {
     palette(length(x))
   }

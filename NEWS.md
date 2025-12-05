@@ -1,5 +1,7 @@
 # jbplot 1.5.6
 
+* Updated for ggplot2 4.0
+
 * First upkeep using `rdev::use_upkeep_issue()`
 
 # jbplot 1.5.5
