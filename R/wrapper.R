@@ -16,17 +16,18 @@
 #'   geom_rlm()
 #' @export
 geom_rlm <- function(
-    mapping = NULL,
-    data = NULL,
-    position = "identity",
-    ...,
-    method = MASS::rlm,
-    formula = y ~ x,
-    se = TRUE,
-    na.rm = FALSE,
-    orientation = NA,
-    show.legend = NA,
-    inherit.aes = TRUE) {
+  mapping = NULL,
+  data = NULL,
+  position = "identity",
+  ...,
+  method = MASS::rlm,
+  formula = y ~ x,
+  se = TRUE,
+  na.rm = FALSE,
+  orientation = NA,
+  show.legend = NA,
+  inherit.aes = TRUE
+) {
   ggplot2::geom_smooth(
     mapping = mapping,
     data = data,
@@ -55,17 +56,18 @@ geom_rlm <- function(
 #'   geom_lm()
 #' @export
 geom_lm <- function(
-    mapping = NULL,
-    data = NULL,
-    position = "identity",
-    ...,
-    method = "lm",
-    formula = y ~ x,
-    se = TRUE,
-    na.rm = FALSE,
-    orientation = NA,
-    show.legend = NA,
-    inherit.aes = TRUE) {
+  mapping = NULL,
+  data = NULL,
+  position = "identity",
+  ...,
+  method = "lm",
+  formula = y ~ x,
+  se = TRUE,
+  na.rm = FALSE,
+  orientation = NA,
+  show.legend = NA,
+  inherit.aes = TRUE
+) {
   ggplot2::geom_smooth(
     mapping = mapping,
     data = data,
@@ -96,18 +98,19 @@ geom_lm <- function(
 #'   geom_hist_bw(binwidth = 1)
 #' @export
 geom_hist_bw <- function(
-    mapping = NULL,
-    data = NULL,
-    position = "stack",
-    color = "black",
-    fill = "white",
-    ...,
-    binwidth = NULL,
-    bins = NULL,
-    na.rm = FALSE,
-    orientation = NA,
-    show.legend = NA,
-    inherit.aes = TRUE) {
+  mapping = NULL,
+  data = NULL,
+  position = "stack",
+  color = "black",
+  fill = "white",
+  ...,
+  binwidth = NULL,
+  bins = NULL,
+  na.rm = FALSE,
+  orientation = NA,
+  show.legend = NA,
+  inherit.aes = TRUE
+) {
   ggplot2::geom_histogram(
     mapping = mapping,
     data = data,
@@ -151,18 +154,19 @@ geom_hist_bw <- function(
 #'   theme_quo()
 #' @export
 annotate_quo <- function(
-    geom,
-    x = NULL,
-    y = NULL,
-    xmin = NULL,
-    xmax = NULL,
-    ymin = NULL,
-    ymax = NULL,
-    xend = NULL,
-    yend = NULL,
-    family = "Lato",
-    ...,
-    na.rm = FALSE) {
+  geom,
+  x = NULL,
+  y = NULL,
+  xmin = NULL,
+  xmax = NULL,
+  ymin = NULL,
+  ymax = NULL,
+  xend = NULL,
+  yend = NULL,
+  family = "Lato",
+  ...,
+  na.rm = FALSE
+) {
   ggplot2::annotate(
     geom = geom,
     x = x,
