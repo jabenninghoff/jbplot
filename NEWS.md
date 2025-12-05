@@ -1,4 +1,4 @@
-# jbplot 1.5.6
+# jbplot 1.6.0
 
 * Updated for ggplot2 4.0
 
