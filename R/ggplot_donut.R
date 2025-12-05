@@ -43,12 +43,14 @@ ggplot_donut <- function(data, group = "group", value = "n", hsize = 2) {
     ggplot2::geom_col() +
     ggplot2::coord_polar(theta = "y") +
     ggplot2::xlim(c(0, hsize + 0.5)) +
-    ggplot2::theme(
-      panel.background = ggplot2::element_blank(),
-      panel.grid = ggplot2::element_blank(),
-      axis.title = ggplot2::element_blank(),
-      axis.ticks = ggplot2::element_blank(),
-      axis.text = ggplot2::element_blank()
+    ggplot2::theme_sub_panel(
+      background = ggplot2::element_blank(),
+      grid = ggplot2::element_blank()
+    ) +
+    ggplot2::theme_sub_axis(
+      title = ggplot2::element_blank(),
+      ticks = ggplot2::element_blank(),
+      text = ggplot2::element_blank()
     )
 }
 

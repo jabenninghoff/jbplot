@@ -100,14 +100,17 @@ geom_lm <- function(
 geom_hist_bw <- function(
   mapping = NULL,
   data = NULL,
+  # omit stat = "bin": rarely needed and causes documentation error
   position = "stack",
   color = "black",
   fill = "white",
   ...,
   binwidth = NULL,
   bins = NULL,
-  na.rm = FALSE,
   orientation = NA,
+  lineend = "butt",
+  linejoin = "mitre",
+  na.rm = FALSE,
   show.legend = NA,
   inherit.aes = TRUE
 ) {
@@ -120,8 +123,10 @@ geom_hist_bw <- function(
     ...,
     binwidth = binwidth,
     bins = bins,
-    na.rm = na.rm,
     orientation = orientation,
+    lineend = lineend,
+    linejoin = linejoin,
+    na.rm = na.rm,
     show.legend = show.legend,
     inherit.aes = inherit.aes
   )
