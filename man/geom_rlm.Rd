@@ -102,7 +102,7 @@ model that \code{method = NULL} would use, then set
 \code{method = NULL} implies \code{formula = y ~ x} when there are fewer than 1,000
 observations and \code{formula = y ~ s(x, bs = "cs")} otherwise.}
 
-\item{se}{Display confidence interval around smooth? (\code{TRUE} by default, see
+\item{se}{Display confidence band around smooth? (\code{TRUE} by default, see
 \code{level} to control.)}
 
 \item{na.rm}{If \code{FALSE}, the default, missing values are removed with
@@ -117,12 +117,14 @@ to either \code{"x"} or \code{"y"}. See the \emph{Orientation} section for more 
 \code{NA}, the default, includes if any aesthetics are mapped.
 \code{FALSE} never includes, and \code{TRUE} always includes.
 It can also be a named logical vector to finely select the aesthetics to
-display.}
+display. To include legend keys for all levels, even
+when no data exists, use \code{TRUE}.  If \code{NA}, all levels are shown in legend,
+but unobserved levels are omitted.}
 
 \item{inherit.aes}{If \code{FALSE}, overrides the default aesthetics,
 rather than combining with them. This is most useful for helper functions
 that define both data and aesthetics and shouldn't inherit behaviour from
-the default plot specification, e.g. \code{\link[ggplot2:borders]{borders()}}.}
+the default plot specification, e.g. \code{\link[ggplot2:annotation_borders]{annotation_borders()}}.}
 }
 \description{
 A wrapper for \code{\link[ggplot2:geom_smooth]{ggplot2::geom_smooth()}} that sets \code{method} to \code{\link[MASS:rlm]{MASS::rlm()}} and \code{formula} to
