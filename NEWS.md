@@ -1,3 +1,7 @@
+# jbplot 1.5.6
+
+* First upkeep using `rdev::use_upkeep_issue()`
+
 # jbplot 1.5.5
 
 * Minor updates
