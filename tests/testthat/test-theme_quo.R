@@ -22,10 +22,10 @@ test_that("theme_quo sets theme properties", {
 
 test_that("theme_quo grid lines options work", {
   blank <- ggplot2::element_blank() # == structure(list(), class = c("element_blank", "element"))
-  minor <- structure(list(
-    colour = NULL, linewidth = structure(0.5, class = "rel"), linetype = NULL,
-    lineend = NULL, arrow = FALSE, inherit.blank = TRUE
-  ), class = c("element_line", "element"))
+  minor <- ggplot2::element_line(
+    colour = NULL, linewidth = ggplot2::rel(0.5), linetype = NULL, lineend = NULL, linejoin = NULL,
+    arrow = FALSE, arrow.fill = NULL, inherit.blank = TRUE
+  )
 
   base <- theme_quo()
   expect_null(base$panel.grid.major)
