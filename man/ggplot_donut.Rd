@@ -23,12 +23,12 @@ Create a donut plot from a data frame containing groups and corresponding values
 \code{\link[ggplot2:ggplot]{ggplot2::ggplot()}}.
 }
 \details{
-Implemented using \code{\link[ggplot2:geom_bar]{ggplot2::geom_col()}}, \code{\link[ggplot2:coord_radial]{ggplot2::coord_radial()}}, and \code{\link[ggplot2:lims]{ggplot2::xlim()}},
+Implemented using \code{\link[ggplot2:geom_col]{ggplot2::geom_col()}}, \code{\link[ggplot2:coord_radial]{ggplot2::coord_radial()}}, and \code{\link[ggplot2:xlim]{ggplot2::xlim()}},
 adapted from guides in
 \href{https://r-graph-gallery.com/128-ring-or-donut-plot.html}{The R Graph Gallery} and
 \href{https://r-charts.com/part-whole/donut-chart-ggplot2/}{R CHARTS}.
 
-Some default plot elements are disabled using \code{\link[ggplot2:theme]{ggplot2::theme()}} and \code{\link[ggplot2:element]{ggplot2::element_blank()}}.
+Some default plot elements are disabled using \code{\link[ggplot2:theme]{ggplot2::theme()}} and \code{\link[ggplot2:element_blank]{ggplot2::element_blank()}}.
 }
 \examples{
 library(dplyr, warn.conflicts = FALSE)
