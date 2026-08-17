@@ -1,3 +1,7 @@
+# jbplot 1.6.2
+
+* 2026-08 Upkeep
+
 # jbplot 1.6.1
 
 * 2026 Upkeep

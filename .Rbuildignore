@@ -1,7 +1,9 @@
 ^_pkgdown\.yml$
+^\.claude$
 ^\.covrignore$
 ^\.github$
 ^\.lintr$
+^\.positai$
 ^\.Rproj\.user$
 ^codecov\.yml$
 ^docs$
