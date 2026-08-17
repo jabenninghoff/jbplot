@@ -45,3 +45,5 @@ vignettes/*.pdf
 
 # Other exclusions
 inst/doc
+# RStudio 2026.04.0+526
+.positai
