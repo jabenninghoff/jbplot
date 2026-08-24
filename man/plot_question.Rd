@@ -4,7 +4,7 @@
 \alias{plot_question}
 \title{Plot Survey Question}
 \usage{
-plot_question(question, df, titles, nudge = 1, wrap = 20)
+plot_question(question, df, titles, nudge = 1, wrap = 20, themed = TRUE)
 }
 \arguments{
 \item{question}{name of column containing the question answers as a factor with specified levels.}
@@ -18,6 +18,8 @@ plot_question(question, df, titles, nudge = 1, wrap = 20)
 
 \item{wrap}{character width to wrap response labels, passed on to \code{\link[stringr:str_wrap]{stringr::str_wrap()}} as
 \code{width}.}
+
+\item{themed}{apply default theme \code{\link[=theme_quo]{theme_quo(minor = TRUE)}} to the plot?}
 }
 \description{
 Plot answers to a survey question using a horizontal bar chart using ggplot2.

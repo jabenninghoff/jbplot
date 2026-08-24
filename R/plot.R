@@ -29,6 +29,7 @@
 #'   [ggplot2::geom_text()] as `nudge_x`.
 #' @param wrap character width to wrap response labels, passed on to [stringr::str_wrap()] as
 #'   `width`.
+#' @param themed apply default theme [`theme_quo(minor = TRUE)`][theme_quo()] to the plot?
 #'
 #' @importFrom rlang .data
 #'
@@ -37,14 +38,15 @@
 #'
 #' map(names(questions), plot_question, answers, questions, nudge = 0.25)
 #' @export
-plot_question <- function(question, df, titles, nudge = 1, wrap = 20) {
+plot_question <- function(question, df, titles, nudge = 1, wrap = 20, themed = TRUE) {
   checkmate::assert_string(question, min.chars = 1)
   checkmate::assert_data_frame(df, min.rows = 1, min.cols = 1)
   checkmate::assert_character(titles, names = "unique")
   checkmate::assert_number(nudge)
   checkmate::assert_number(wrap)
+  checkmate::assert_flag(themed)
 
-  df |>
+  gg <- df |>
     dplyr::group_by(.data[[question]]) |>
     dplyr::summarize(count = dplyr::n()) |>
     dplyr::mutate(label = scales::label_percent()(.data$count / sum(.data$count))) |>
@@ -56,6 +58,11 @@ plot_question <- function(question, df, titles, nudge = 1, wrap = 20) {
       drop = FALSE, labels = function(x) stringr::str_wrap(x, width = wrap)
     ) +
     ggplot2::labs(x = NULL, y = NULL) +
-    ggplot2::labs(title = paste0(question, ". ", titles[[question]])) +
-    theme_quo(minor = FALSE)
+    ggplot2::labs(title = paste0(question, ". ", titles[[question]]))
+
+  if (themed) {
+    gg + theme_quo(minor = FALSE)
+  } else {
+    gg
+  }
 }
