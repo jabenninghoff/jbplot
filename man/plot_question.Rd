@@ -11,7 +11,7 @@ plot_question(question, df, titles, nudge = 1, wrap = 20, themed = TRUE)
 
 \item{df}{data frame containing survey answers.}
 
-\item{titles}{named character vector containing titles for answers.}
+\item{titles}{named character vector mapping question column names to question titles.}
 
 \item{nudge}{amount of distance to nudge text label (percentage), passed on to
 \code{\link[ggplot2:geom_text]{ggplot2::geom_text()}} as \code{nudge_x}.}
