@@ -5,7 +5,7 @@
 \alias{answers}
 \title{Example Survey Answers}
 \format{
-A data frame with 9 rows and 3 variables (Q1, Q2, Q3). Q1 and Q2 has answers from a
+A data frame with 9 rows and 3 variables (Q1, Q2, Q3). Q1 and Q2 have answers from a
 five-point Likert scale, Q3 has "Yes" or "No" answers.
 }
 \usage{
