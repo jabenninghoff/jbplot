@@ -10,23 +10,25 @@ URL: https://jabenninghoff.github.io/jbplot/,
     https://github.com/jabenninghoff/jbplot
 BugReports: https://github.com/jabenninghoff/jbplot/issues
 Depends: 
-    R (>= 3.6.3)
+    R (>= 4.1.0)
 Imports:
     checkmate,
+    dplyr,
     ggplot2,
     MASS,
     rlang,
-    scales
+    scales,
+    stringr
 Suggests: 
     covr,
     desc,
     devtools,
-    dplyr,
     DT,
     fs,
     knitr,
     pkgdown,
     pkgload,
+    purrr,
     rdev,
     rmarkdown,
     showtext,
@@ -43,4 +45,5 @@ Config/roxygen2/version: 8.1.0
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
+LazyData: true
 Roxygen: list(markdown = TRUE)
