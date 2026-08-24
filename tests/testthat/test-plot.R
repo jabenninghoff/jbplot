@@ -4,6 +4,7 @@ gg <- plot_question(names(questions[1]), answers, questions)
 
 test_that("plot_question validates parameters", {
   expect_no_error(plot_question(names(questions[1]), answers, questions))
+  expect_no_error(plot_question(names(questions[1]), answers, questions, themed = FALSE))
   expect_error(plot_question("", answers, questions), "'question'")
   expect_error(plot_question(names(questions[1]), data.frame(), questions), "'df'")
   expect_error(plot_question(names(questions[1]), answers, c("title 1", "title 2")), "'titles'")
