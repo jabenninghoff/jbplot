@@ -28,6 +28,7 @@ reference:
     - geom_rlm
     - ggplot_donut
     - ggplot_donut_percent
+    - plot_question
   - title: jbplot Package
     desc: >
       jbplot package documentation

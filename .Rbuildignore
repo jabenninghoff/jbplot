@@ -14,3 +14,4 @@
 ^renv\.lock$
 ^renv$
 ^TODO\.md$
+^data-raw$

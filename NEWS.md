@@ -1,3 +1,7 @@
+# jbplot 1.7.0
+
+* Added `plot_question()`: plot answers to a survey question using a horizontal bar chart using ggplot2
+
 # jbplot 1.6.2
 
 * 2026-08 Upkeep
