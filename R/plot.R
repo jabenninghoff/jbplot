@@ -13,7 +13,7 @@
 #'
 #' Example answers used for [plot_question()].
 #'
-#' @format A data frame with 9 rows and 3 variables (Q1, Q2, Q3). Q1 and Q2 has answers from a
+#' @format A data frame with 9 rows and 3 variables (Q1, Q2, Q3). Q1 and Q2 have answers from a
 #'   five-point Likert scale, Q3 has "Yes" or "No" answers.
 #' @keywords internal
 "answers"
@@ -24,7 +24,7 @@
 #'
 #' @param question name of column containing the question answers as a factor with specified levels.
 #' @param df data frame containing survey answers.
-#' @param titles named character vector containing titles for answers.
+#' @param titles named character vector mapping question column names to question titles.
 #' @param nudge amount of distance to nudge text label (percentage), passed on to
 #'   [ggplot2::geom_text()] as `nudge_x`.
 #' @param wrap character width to wrap response labels, passed on to [stringr::str_wrap()] as
