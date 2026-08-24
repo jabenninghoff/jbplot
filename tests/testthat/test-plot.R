@@ -9,6 +9,7 @@ test_that("plot_question validates parameters", {
   expect_error(plot_question(names(questions[1]), answers, c("title 1", "title 2")), "'titles'")
   expect_error(plot_question(names(questions[1]), answers, questions, nudge = "a"), "'nudge'")
   expect_error(plot_question(names(questions[1]), answers, questions, wrap = "b"), "'wrap'")
+  expect_error(plot_question(names(questions[1]), answers, questions, themed = NA), "'themed'")
 })
 
 test_that("plot_question uses geom_col()", {
