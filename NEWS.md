@@ -1,3 +1,7 @@
+# jbplot 1.7.1
+
+* Update R-CMD-check to run on macOS only
+
 # jbplot 1.7.0
 
 * Added `plot_question()`: plot answers to a survey question using a horizontal bar chart using ggplot2
