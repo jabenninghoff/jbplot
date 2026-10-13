@@ -1,3 +1,7 @@
+# jbplot 1.7.2
+
+* Minor updates
+
 # jbplot 1.7.1
 
 * Update R-CMD-check to run on macOS only
