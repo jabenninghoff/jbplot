@@ -1,10 +1,10 @@
 {
   "R": {
-    "Version": "4.6.1",
+    "Version": "4.6.2",
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "https://packagemanager.posit.co/cran/2026-10-07"
+        "URL": "https://packagemanager.posit.co/cran/2026-10-24"
       }
     ]
   },
@@ -81,8 +81,7 @@
       "NeedsCompilation": "yes",
       "Author": "Brian Ripley [aut, cre, cph], Bill Venables [aut, cph], Douglas M. Bates [ctb], Kurt Hornik [trl] (partial port ca 1998), Albrecht Gebhardt [trl] (partial port ca 1998), David Firth [ctb] (support functions for polr)",
       "Maintainer": "Brian Ripley <Brian.Ripley@R-project.org>",
-      "Repository": "CRAN",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "R.cache": {
       "Package": "R.cache",
@@ -960,7 +959,7 @@
     },
     "curl": {
       "Package": "curl",
-      "Version": "8.0.0",
+      "Version": "8.1.0",
       "Source": "Repository",
       "Type": "Package",
       "Title": "A Modern and Flexible Web Client for R",
@@ -1541,7 +1540,7 @@
     },
     "gert": {
       "Package": "gert",
-      "Version": "2.4.1",
+      "Version": "2.5.0",
       "Source": "Repository",
       "Type": "Package",
       "Title": "Simple Git Client for R",
@@ -3452,7 +3451,7 @@
     },
     "rdev": {
       "Package": "rdev",
-      "Version": "1.19.8",
+      "Version": "1.19.9",
       "Source": "GitHub",
       "Title": "R Development Tools",
       "Authors@R": "person(\"John\", \"Benninghoff\", , \"jbenninghoff@mac.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6230-4742\"))",
@@ -3513,7 +3512,7 @@
       ],
       "VignetteBuilder": "knitr",
       "Config/rdev/last-upkeep": "2026-07-26",
-      "Config/roxygen2/version": "8.1.0",
+      "Config/roxygen2/version": "8.1.1",
       "Config/testthat/edition": "3",
       "Encoding": "UTF-8",
       "Language": "en-US",
@@ -3525,7 +3524,7 @@
       "RemoteUsername": "jabenninghoff",
       "RemoteRepo": "rdev",
       "RemoteRef": "main",
-      "RemoteSha": "3c019121d9de6eed587f7325d5ebcc33b093d933"
+      "RemoteSha": "dd2bd62ee5ea9e2c8d3522c8b80244aa7ad84b2b"
     },
     "rdtools": {
       "Package": "rdtools",
@@ -3806,7 +3805,7 @@
     },
     "roxygen2": {
       "Package": "roxygen2",
-      "Version": "8.1.0",
+      "Version": "8.1.1",
       "Source": "Repository",
       "Title": "In-Line Documentation for R",
       "Authors@R": "c( person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\", \"cph\"), comment = c(ORCID = \"0000-0003-4757-117X\")), person(\"Peter\", \"Danenberg\", , \"pcd@roxygen.org\", role = c(\"aut\", \"cph\")), person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = \"aut\"), person(\"Manuel\", \"Eugster\", role = c(\"aut\", \"cph\")), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"), comment = c(ROR = \"03wc8by49\")) )",
@@ -3829,6 +3828,7 @@
         "R6 (>= 2.1.2)",
         "rdtools (>= 0.1.0)",
         "rlang (>= 1.1.0)",
+        "stats",
         "utils",
         "withr",
         "xml2"
@@ -3850,7 +3850,7 @@
       "Config/Needs/website": "tidyverse/tidytemplate",
       "Config/roxygen2/load": "installed",
       "Config/roxygen2/markdown": "TRUE",
-      "Config/roxygen2/version": "8.0.0.9000",
+      "Config/roxygen2/version": "8.1.0.9000",
       "Config/testthat/edition": "3",
       "Config/testthat/parallel": "TRUE",
       "Encoding": "UTF-8",
@@ -3858,7 +3858,7 @@
       "NeedsCompilation": "yes",
       "Author": "Hadley Wickham [aut, cre, cph] (ORCID: <https://orcid.org/0000-0003-4757-117X>), Peter Danenberg [aut, cph], Gábor Csárdi [aut], Manuel Eugster [aut, cph], Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)",
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
-      "Repository": "RSPM"
+      "Repository": "CRAN"
     },
     "rprojroot": {
       "Package": "rprojroot",
@@ -5016,7 +5016,7 @@
     },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.61",
+      "Version": "0.62",
       "Source": "Repository",
       "Type": "Package",
       "Title": "Supporting Functions for Packages Maintained by 'Yihui Xie'",
@@ -5039,7 +5039,6 @@
         "tinytex (>= 0.30)",
         "mime",
         "litedown (>= 0.6)",
-        "commonmark",
         "knitr (>= 1.50)",
         "remotes",
         "pak",
@@ -5056,7 +5055,7 @@
       "BugReports": "https://github.com/yihui/xfun/issues",
       "Encoding": "UTF-8",
       "VignetteBuilder": "litedown",
-      "Config/roxygen2/version": "8.1.0",
+      "Config/roxygen2/version": "8.1.1",
       "NeedsCompilation": "yes",
       "Author": "Yihui Xie [aut, cre, cph] (ORCID: <https://orcid.org/0000-0003-0645-5666>, URL: https://yihui.org), Wush Wu [ctb], Daijiang Li [ctb], Xianying Tan [ctb], Salim Brüggemann [ctb] (ORCID: <https://orcid.org/0000-0002-5329-5987>), Christophe Dervieux [ctb]",
       "Maintainer": "Yihui Xie <xie@yihui.name>",
