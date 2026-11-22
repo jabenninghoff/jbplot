@@ -1,3 +1,7 @@
+# jbplot 1.7.4
+
+* Maintenance updates
+
 # jbplot 1.7.3
 
 * 2026-10 Upkeep
